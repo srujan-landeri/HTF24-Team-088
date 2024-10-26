@@ -26,10 +26,14 @@ async def register_user(user: UserCreate):
         "username": user.username,
         "email": user.email,
         "password": hashed_password,
+        "liked_articles": [],      
+        "disliked_articles": [],   
+        "saved_articles": []       
     }
 
     user_collection.insert_one(user_data)
     return UserResponse(username=user.username, email=user.email)
+
 
 @router.post("/login")
 async def login_user(user: UserLogin):
@@ -41,4 +45,4 @@ async def login_user(user: UserLogin):
     access_token = create_access_token(
         data={"sub": db_user["username"]}, expires_delta=access_token_expires
     )
-    return {"access_token": access_token, "token_type": "bearer"}
+    return {"access_token": access_token, "token_type": "bearer", "id": str(db_user["_id"])}

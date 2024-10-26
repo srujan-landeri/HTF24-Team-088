@@ -1,0 +1,41 @@
+{
+    "timestamp": "2024-10-27T00:26:54.246620",
+    "articles": {
+        "default": {
+            "authors": [
+                "Eric Geller",
+                "Dua Rashid",
+                "Danny Gallagher",
+                "Todd Feathers"
+            ],
+            "titles": [
+                "How a Trump Win Could Unleash Dangerous AI",
+                "This Toilet Seat Has a Camera for Taking Pictures of Your Poop",
+                "President Biden sets up new AI guardrails for military, intelligence agencies",
+                "Nobel Prize Goes to ‘Godfathers of AI’ Who Now Fear Their Work Is Growing Too Powerful",
+                "[Removed]"
+            ],
+            "descriptions": [
+                "Donald Trump's opposition to “woke” safety standards for artificial intelligence would likely mean the dismantling of regulations that protect Americans from misinformation, discrimination, and worse.",
+                "The seat's camera uses \"artificial gut intelligence\" to help identify any potential digestive health issues.",
+                "The White House issued its first national security memorandum outlining the use of artificial intelligence for the military and intelligence agencies. The White House also shared a shortened copy of the memo with the public.\nThe new memo sets up guidelines fo…",
+                "John Hopfield and Geoffrey Hinton developed artificial neural networks that laid the foundation for modern recommendation systems and generative AI.",
+                "[Removed]"
+            ],
+            "urls": [
+                "https://www.wired.com/story/donald-trump-ai-safety-regulation/",
+                "https://gizmodo.com/this-toilet-seat-has-a-camera-for-taking-pictures-of-your-poop-2000514322",
+                "https://consent.yahoo.com/v2/collectConsent?sessionId=1_cc-session_746fa7c6-f0ab-4e51-accc-588b2d550fa7",
+                "https://gizmodo.com/nobel-prize-goes-to-godfathers-of-ai-who-now-fear-their-work-is-growing-too-powerful-2000509098",
+                "https://removed.com"
+            ],
+            "publishedAt": [
+                "2024-10-21T10:30:00Z",
+                "2024-10-21T15:19:27Z",
+                "2024-10-24T20:17:53Z",
+                "2024-10-08T15:40:43Z",
+                "2024-09-28T16:30:18Z"
+            ]
+        }
+    }
+}

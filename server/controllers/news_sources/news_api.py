@@ -111,13 +111,6 @@ def search_for_news(
             
     return articles
 
-<<<<<<< HEAD
 # if __name__ == "__main__":
 #     category_news = get_latest_news(categories={"categories": ["business", "technology"]})
 #     keyword_news = search_for_news(words={"words": ["artificial intelligence", "machine learning"]}, lang = 'ta')
-=======
-if __name__ == "__main__":
-    # Get category news
-    category_news = get_latest_news_api(categories={"categories": ["business", "technology"]})
-    keyword_news = search_for_news(words={"words": ["artificial intelligence", "machine learning"]}, lang = 'ta')
->>>>>>> 4170c9b3724a8d4b1e193b28ead918801da4f59e

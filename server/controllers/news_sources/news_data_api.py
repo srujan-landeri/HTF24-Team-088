@@ -4,6 +4,8 @@ import os
 
 load_dotenv()
 
+
+#latest news by category
 def get_latest_news(categories:dict):
     articles={}
     params={
@@ -19,6 +21,7 @@ def get_latest_news(categories:dict):
         titles=[]
         published_dates=[]
         authors=[]
+        descriptions=[]
         articles[category]={}
         params["category"]=category
         response = requests.get(url, params=params)
@@ -28,13 +31,15 @@ def get_latest_news(categories:dict):
             titles.append(article["title"])
             published_dates.append(article["pubDate"])
             authors.append(article["creator"])
+            descriptions.append(article["description"])
         articles[category]["links"]=links
         articles[category]["titles"]=titles
         articles[category]["published_dates"]=published_dates
-        articles[category]["authors"]=authors
+        articles[category]["sources"]=authors
+        articles[category]["descriptions"]=descriptions
     return articles
 
-
+#news by keyword
 def get_news_from_trends(words:dict):
     articles = {}
     params = {
@@ -50,6 +55,7 @@ def get_news_from_trends(words:dict):
         titles = []
         published_dates = []
         authors = []
+        descriptions=[]
         articles[word] = {}
         params["q"] = word
         response = requests.get(url, params=params)
@@ -59,10 +65,12 @@ def get_news_from_trends(words:dict):
             titles.append(article["title"])
             published_dates.append(article["pubDate"])
             authors.append(article["creator"])
+            descriptions.append(article["description"])
         articles[word]["links"] = links
         articles[word]["titles"] = titles
         articles[word]["published_dates"] = published_dates
-        articles[word]["authors"] = authors
+        articles[word]["sources"] = authors
+        articles[word]["descriptions"]=descriptions
     return articles
 
 

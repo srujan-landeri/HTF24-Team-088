@@ -8,6 +8,8 @@ load_dotenv()
 
 SERPAPI_KEY = os.getenv("SERPAPI_KEY")
 
+
+#news by keyword
 def get_serp_by_query(query: str, limit: int = 10) -> Optional[List[Dict]]:
     """
     Fetch news stories for a specific query using SerpAPI.
@@ -24,7 +26,7 @@ def get_serp_by_query(query: str, limit: int = 10) -> Optional[List[Dict]]:
         search = GoogleSearch({
             "api_key": SERPAPI_KEY,
             "q": query,
-            "engine": "google_news",
+            "engine": "bing",
             "tbm": "nws",
             "num": limit
         })
@@ -56,6 +58,7 @@ def get_serp_by_query(query: str, limit: int = 10) -> Optional[List[Dict]]:
         print(f"Error occurred: {e}")
         return None
 
+#news by category
 def get_serp_by_categories(limit: int = 10) -> Dict[str, List[Dict]]:
     """
     Fetch top news stories from all available Google News categories using Google News API.
@@ -77,7 +80,7 @@ def get_serp_by_categories(limit: int = 10) -> Dict[str, List[Dict]]:
         for category_name, category_code in categories.items():
             search_params = {
                 "api_key": SERPAPI_KEY,
-                "engine": "google_news",
+                "engine": "",
                 "num": limit
             }
             

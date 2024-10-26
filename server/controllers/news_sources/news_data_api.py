@@ -6,13 +6,13 @@ load_dotenv()
 
 
 #latest news by category
-def get_latest_news(categories:dict):
+def get_latest_news(categories:dict,language="en"):
     articles={}
     params={
         "apikey": os.getenv("NEWSDATA_API_KEY"),
         "country":"us,in",
-        "language":"en",
         "size":10,
+        "language":language,
         "removeduplicate":1
     }
     url = "https://newsdata.io/api/1/latest"
@@ -40,12 +40,12 @@ def get_latest_news(categories:dict):
     return articles
 
 #news by keyword
-def get_news_from_trends(words:dict):
+def get_news_from_trends(words:dict,language="en"):
     articles = {}
     params = {
         "apikey": os.getenv("NEWSDATA_API_KEY"),
         "country": "us,in",
-        "language": "en",
+        "language": language,
         "size": 10,
         "removeduplicate": 1,
     }

@@ -1,11 +1,11 @@
 # pip install -q -U google-generativeai
 
 import google.generativeai as genai
-
+import os
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
-import os
+
 
 load_dotenv()
 

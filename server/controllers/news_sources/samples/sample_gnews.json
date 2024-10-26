@@ -1,0 +1,189 @@
+{
+    "timestamp": "2024-10-26T23:12:59.001131",
+    "articles": {
+        "technology": [
+            {
+                "source": "Gematsu",
+                "author": "Sal Romano",
+                "title": "Sonic X Shadow Generations sales top one million - Gematsu",
+                "url": "https://www.gematsu.com/2024/10/sonic-x-shadow-generations-sales-top-one-million",
+                "description": "Total sales for Sonic X Shadow Generations have surpassed one million units worldwide, SEGA announced.",
+                "publishedAt": "2024-10-25T15:33:41Z",
+                "content": "Total sales for Sonic X Shadow Generations have surpassed one million units worldwide, SEGA announced. \r\nSonic X Shadow Generations launched today for PlayStation 5, Xbox Series, PlayStation 4, Xbox … [+1313 chars]"
+            },
+            {
+                "source": "GameSpot",
+                "author": "Darryn Bonthuys",
+                "title": "Best Buy's 3-Day Gaming Sale Has Excellent Gaming Laptop, Monitor, And Desktop Deals - GameSpot",
+                "url": "https://www.gamespot.com/gallery/best-buys-3-day-gaming-sale-has-excellent-gaming-laptop-monitor-and-desktop-deals/2900-5890/",
+                "description": "Save big on gaming hardware by Asus, Samsung, HP, Dell, and more leading manufacturers through Sunday, October 27.",
+                "publishedAt": "2024-10-25T15:31:28Z",
+                "content": null
+            },
+            {
+                "source": "CNET",
+                "author": null,
+                "title": "I Tried the iPhone 16's New Visual Intelligence, and It Feels Like the Future - CNET",
+                "url": "https://www.cnet.com/tech/mobile/i-tried-the-iphone-16s-new-visual-intelligence-and-it-feels-like-the-future/",
+                "description": "Apple's Visual Intelligence is only in beta, but it could say a lot about where phones are going.",
+                "publishedAt": "2024-10-25T13:34:00Z",
+                "content": "As I walked past a Japanese tea shop in New York's Bowery Market, all I had to do was point my iPhone at the storefront and hold a button on the side of my phone to see its hours, photos from custome… [+6652 chars]"
+            },
+            {
+                "source": "VentureBeat",
+                "author": "Carl Franzen",
+                "title": "OpenAI CEO responds to report of GPT-5 Orion coming later this year: ‘Fake news out of control’ - VentureBeat",
+                "url": "https://venturebeat.com/ai/openai-ceo-responds-to-report-of-gpt-5-orion-coming-later-this-year-fake-news-out-of-control/",
+                "description": "It's an interesting quasi-denial given how precise The Verge report is, noting specific details about Orion's supposed release plans.",
+                "publishedAt": "2024-10-25T13:31:34Z",
+                "content": "Join our daily and weekly newsletters for the latest updates and exclusive content on industry-leading AI coverage. Learn More\r\nThe Verge last night published an exclusive and seemingly well research… [+3068 chars]"
+            },
+            {
+                "source": "TechCrunch",
+                "author": "Ivan Mehta",
+                "title": "Apple adds a menu in iOS 18.2 to change default apps including messages and calls - TechCrunch",
+                "url": "https://techcrunch.com/2024/10/25/apple-adds-a-menu-in-ios-18-2-to-change-default-apps-including-messages-and-calls/",
+                "description": "Apple released iOS 18.2 as a developer beta users earlier this week. While there was a bunch of AI goodie shipped with this version — including Gemmoji,",
+                "publishedAt": "2024-10-25T13:17:21Z",
+                "content": "Apple released iOS 18.2 as a developer beta users earlier this week. While there was a bunch of AI goodie shipped with this version including Gemmoji, Image Playground, and ChatGPT integration the co… [+1530 chars]"
+            },
+            {
+                "source": "Eurogamer.net",
+                "author": "Vikki Blake",
+                "title": "The Thing: Remastered's first look at gameplay looks suitably terrifying - Eurogamer",
+                "url": "https://www.eurogamer.net/the-thing-remastereds-first-look-at-gameplay-looks-suitably-terrifying",
+                "description": "DreadXP's second Indie Horror Showcase 2024 was broadcast last night, ushering in a flood of new spooky game announceme…",
+                "publishedAt": "2024-10-25T12:14:54Z",
+                "content": "DreadXP's second Indie Horror Showcase 2024 was broadcast last night, ushering in a flood of new spooky game announcements, including a new trailer for the upcoming remaster of 2002 third-person surv… [+1638 chars]"
+            },
+            {
+                "source": "CNET",
+                "author": null,
+                "title": "The Essential Guide to Using Apple's New Passwords App: Passkeys, 2FA, Sharing and More - CNET",
+                "url": "https://www.cnet.com/tech/services-and-software/the-essential-guide-to-using-apples-new-passwords-app-passkeys-2fa-sharing-and-more/",
+                "description": "If you're not storing unique passwords for all of your websites and services in a secure place, Apple's Passwords app gives you an incentive to start now.",
+                "publishedAt": "2024-10-25T11:11:00Z",
+                "content": "How do you store the passwords for your favorite websites, your bank, smart devices and all the rest? You've no doubt got a raft of passwords to keep track of. It's exhausting. We're long past the ti… [+14019 chars]"
+            },
+            {
+                "source": "IGN",
+                "author": "Wesley Yin-Poole",
+                "title": "World of Warcraft’s $90 Mount Is So Popular the In-Game Auction House Is Selling Out of WoW Tokens - IGN",
+                "url": "https://www.ign.com/articles/world-of-warcrafts-90-mount-is-so-popular-the-in-game-auction-house-is-selling-out-of-wow-tokens",
+                "description": "Blizzard’s World of Warcraft is no stranger to costly in-game cosmetics, but its latest super expensive mount is so popular it’s causing a shortage of WoW Tokens in the in-game auction house.",
+                "publishedAt": "2024-10-25T10:53:12Z",
+                "content": "Blizzards World of Warcraft is no stranger to costly in-game cosmetics, but its latest super expensive mount is so popular its causing a shortage of WoW Tokens in the in-game auction house.\r\nThe moun… [+3681 chars]"
+            },
+            {
+                "source": "Ars Technica",
+                "author": "Andrew Cunningham",
+                "title": "What I learned from 3 years of running Windows 11 on “unsupported” PCs - Ars Technica",
+                "url": "https://arstechnica.com/gadgets/2024/10/what-i-learned-from-3-years-of-running-windows-11-on-unsupported-pcs/",
+                "description": "When your old PC goes over the Windows 10 update cliff, can Windows 11 save it?",
+                "publishedAt": "2024-10-25T10:45:41Z",
+                "content": null
+            },
+            {
+                "source": "Dexerto",
+                "author": "James Busby",
+                "title": "Black Ops 6 players are flocking to Zombies over Multiplayer after “amazing” reviews - Dexerto",
+                "url": "https://www.dexerto.com/call-of-duty/black-ops-6-players-flock-to-zombies-mode-following-amazing-reviews-2959295/",
+                "description": "Black Ops 6 Zombies mode is being praised by the community thanks to some much-needed changes that help make the mode feel fresh.",
+                "publishedAt": "2024-10-25T10:45:39Z",
+                "content": "Black Ops 6 Zombies mode is being praised by the community thanks to some much-needed changes that help make the mode feel fresh. \r\nAfter four years, Black Ops 6 marks the return of the Zombies game … [+2189 chars]"
+            }
+        ],
+        "business": [
+            {
+                "source": "CNBC",
+                "author": "Annika Kim Constantino, Amelia Lucas",
+                "title": "CDC says 75 people affected in E. coli outbreak linked to McDonald's Quarter Pounders - CNBC",
+                "url": "https://www.cnbc.com/2024/10/25/mcdonalds-e-coli-outbreak-cdc-updates-case-count.html",
+                "description": "It is the latest tally of people affected since the agency announced the outbreak on Tuesday, initially citing 49 cases and one death across 10 states.",
+                "publishedAt": "2024-10-25T15:10:34Z",
+                "content": "A deadly E. coli outbreak linked to McDonald's Quarter Pounders has led to 75 cases in 13 states, the Centers for Disease Control and Prevention said Friday, as it investigates the source of the spre… [+3605 chars]"
+            },
+            {
+                "source": "CNN",
+                "author": "Bryan Mena",
+                "title": "Americans are feeling better about the economy after the Fed’s jumbo rate cut - CNN",
+                "url": "https://www.cnn.com/2024/10/25/economy/consumer-sentiment-michigan-lower-interest-rates/index.html",
+                "description": "Americans’ attitudes toward the economy improved this month thanks to lower interest rates.",
+                "publishedAt": "2024-10-25T14:51:00Z",
+                "content": "Americans attitudes toward the economy improved this month thanks to lower interest rates.\r\nThe University of Michigans latest consumer survey, released Friday, showed that sentiment rose in October … [+1819 chars]"
+            },
+            {
+                "source": "Barron's",
+                "author": "Barron's",
+                "title": "Tesla Stock Jumped 22%. What Market History Says Happens Next. - Barron's",
+                "url": "https://www.barrons.com/articles/tesla-stock-market-today-c99e7ec6",
+                "description": null,
+                "publishedAt": "2024-10-25T14:46:00Z",
+                "content": null
+            },
+            {
+                "source": "CNBC",
+                "author": "Leslie Josephs",
+                "title": "Spirit Airlines stock jumps 25% after struggling budget carrier said it will sell planes, cut jobs - CNBC",
+                "url": "https://www.cnbc.com/2024/10/25/spirit-airlines-stock-sell-planes-cut-jobs.html",
+                "description": "Spirit Airlines shares rose after the struggling carrier said it will cut jobs and sell planes.",
+                "publishedAt": "2024-10-25T14:40:06Z",
+                "content": "Spirit Airlines shares surged more than 20% after the struggling budget carrier said it would cut jobs and sell aircraft.\r\nThe carrier late Thursday laid out a plan to reduce costs and raise cash by … [+1525 chars]"
+            },
+            {
+                "source": "IGN",
+                "author": "Rebekah Valentine",
+                "title": "Microsoft CEO Satya Nadella Gets $30 Million Pay Raise Amid Year of Massive Gaming Layoffs - IGN",
+                "url": "https://www.ign.com/articles/microsoft-ceo-satya-nadella-gets-30-million-pay-raise-amid-year-of-massive-gaming-layoffs",
+                "description": "The CEO of Microsoft, Satya Nadella, is getting a pay raise. A $30 million one.",
+                "publishedAt": "2024-10-25T14:39:15Z",
+                "content": "The CEO of Microsoft, Satya Nadella, is getting a pay raise. A $30 million one.\r\nAccording to a proxy filing published earlier this week and spotted by NBC, Nadella's compensation for the fiscal year… [+2994 chars]"
+            },
+            {
+                "source": "The Verge",
+                "author": "Andrew J. Hawkins",
+                "title": "Waymo just raised $5.6 billion to spread robotaxis to more cities - The Verge",
+                "url": "https://www.theverge.com/2024/10/25/24279330/waymo-funding-round-series-c-amount-alphabet",
+                "description": "Waymo raised $5.6 billion in a series C round that was its largest to date. The company will use the money to brings its robotaxis to more cities.",
+                "publishedAt": "2024-10-25T14:38:04Z",
+                "content": "Waymo just raised $5.6 billion to spread robotaxis to more cities\r\nWaymo just raised $5.6 billion to spread robotaxis to more cities\r\n / The funding round was the driverless car companys largest to d… [+3021 chars]"
+            },
+            {
+                "source": "Barron's",
+                "author": "Barron's",
+                "title": "Nvidia Stock Nears Record High Ahead of Big Tech Earnings - Barron's",
+                "url": "https://www.barrons.com/articles/nvidia-stock-price-big-tech-earnings-909f67d3",
+                "description": null,
+                "publishedAt": "2024-10-25T14:30:00Z",
+                "content": null
+            },
+            {
+                "source": "CNBC",
+                "author": "Alex Harring",
+                "title": "New York Stock Exchange to extend after-hours trading - CNBC",
+                "url": "https://www.cnbc.com/2024/10/25/new-york-stock-exchange-to-extend-after-hours-trading.html",
+                "description": "Trading would open at 1:30 a.m. and end at 11:30 p.m. ET on weekdays on the Arca electronics exchange, if approved by regulators.",
+                "publishedAt": "2024-10-25T14:26:04Z",
+                "content": "The New York Stock Exchange on Friday announced plans to extend trading on its all-electronic exchange to 22 hours a day.\r\nThe NYSE announcement comes as interest in all-day trading in U.S. markets h… [+1534 chars]"
+            },
+            {
+                "source": "Yahoo Entertainment",
+                "author": "Adrian Volenik",
+                "title": "Warren Buffett Finally Chooses Whom To Endorse In The 2024 Election And It Might Be A Surprise For Many - Yahoo Finance",
+                "url": "https://finance.yahoo.com/news/warren-buffett-finally-chooses-whom-141605032.html",
+                "description": "Warren Buffett has always captured people’s attention, not just because of his success as an investor but because of his cautious and thoughtful approach to ...",
+                "publishedAt": "2024-10-25T14:16:05Z",
+                "content": "Warren Buffett has always captured peoples attention, not just because of his success as an investor but because of his cautious and thoughtful approach to almost everything. This time, however, he's… [+2105 chars]"
+            },
+            {
+                "source": "Yahoo Entertainment",
+                "author": "Madison Mills",
+                "title": "Exactly how much energy will hyperscalers need to run data centers? - Yahoo Finance",
+                "url": "https://finance.yahoo.com/video/exactly-much-energy-hyperscalers-run-140757133.html",
+                "description": "Grid operators are seeing increased energy demand as the AI race heats up among hyperscalers. The Morning Brief's Madison Mills breaks down a chart from...",
+                "publishedAt": "2024-10-25T14:07:57Z",
+                "content": "Grid operators are seeing increased energy demand as the AI race heats up among hyperscalers. The Morning Brief's Madison Mills breaks down a chart from Apollo Global Management chief economist Torst… [+400 chars]"
+            }
+        ]
+    }
+}

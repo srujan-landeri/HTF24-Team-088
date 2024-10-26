@@ -37,7 +37,10 @@ def summarize(scraped_content):
 
     return response.text
 
-content = scrape("https://www.cnn.com/science/vera-rubin-worlds-largest-camera-spc/index.html")
-summary = summarize(content)
 
-print(summary)
+if __name__ == "__main__":
+    content = scrape("https://www.cnn.com/science/vera-rubin-worlds-largest-ca-spc/index.html")
+    print(content)
+    summary = summarize(content)
+
+    print(summary)

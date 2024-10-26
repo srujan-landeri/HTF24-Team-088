@@ -1,19 +1,16 @@
 # pip install -q -U google-generativeai
-
 import google.generativeai as genai
 import os
 import requests
 from bs4 import BeautifulSoup
 from dotenv import load_dotenv
 
-# Load environment variables
 load_dotenv()
 
 def summarize(url):
     try:
-        # Fetch the webpage
         response = requests.get(url)
-        response.raise_for_status()  # Raise an error for bad responses
+        response.raise_for_status()
         soup = BeautifulSoup(response.text, 'html.parser')
 
         # Extract all headings and paragraphs
@@ -41,7 +38,7 @@ def summarize(url):
 
         except Exception as api_err:
             print(f"An error occurred while generating the summary: {api_err}")
-            return "Failed to generate summary."  # Return a message on failure
+            return "Failed to generate summary."
 
     except requests.RequestException as req_err:
         print(f"Request error: {req_err}")
@@ -55,8 +52,8 @@ def summarize(url):
         }
     
 
-if __name__ == "__main__":
-    url = "https://www.cnn.com/science/vera-rubin-worlds-largest-ca-spc/index.html"
+# if __name__ == "__main__":
+#     url = "https://www.cnn.com/science/vera-rubin-worlds-largest-ca-spc/index.html"
     
-    summary = summarize(url)
-    print("Summary:", summary)
+#     summary = summarize(url)
+#     print("Summary:", summary)

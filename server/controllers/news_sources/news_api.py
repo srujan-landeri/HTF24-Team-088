@@ -23,6 +23,7 @@ def get_latest_news(
         titles = []
         published_dates = []
         authors = []
+        article_source = []
         descriptions = []
         articles[category] = {}
         
@@ -96,7 +97,6 @@ def search_for_news(
             articles[word]["sources"] = authors
             articles[word]["descriptions"] = descriptions
     
-    # Create samples directory and save to JSON
     os.makedirs("samples", exist_ok=True)
     output_data = {
         "timestamp": datetime.now().isoformat(),
@@ -111,7 +111,6 @@ def search_for_news(
             
     return articles
 
-if __name__ == "__main__":
-    # Get category news
-    category_news = get_latest_news(categories={"categories": ["business", "technology"]})
-    keyword_news = search_for_news(words={"words": ["artificial intelligence", "machine learning"]}, lang = 'ta')
+# if __name__ == "__main__":
+#     category_news = get_latest_news(categories={"categories": ["business", "technology"]})
+#     keyword_news = search_for_news(words={"words": ["artificial intelligence", "machine learning"]}, lang = 'ta')

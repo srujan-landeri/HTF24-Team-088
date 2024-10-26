@@ -1,0 +1,95 @@
+{
+    "Top Stories": [
+      {
+        "title": null,
+        "link": null,
+        "source": null,
+        "date": null,
+        "snippet": null,
+        "thumbnail": null,
+        "position": 1
+      },
+      {
+        "title": null,
+        "link": null,
+        "source": null,
+        "date": null,
+        "snippet": null,
+        "thumbnail": null,
+        "position": 2
+      },
+      {
+        "title": "Jeff Bezos blocked the Washington Post's endorsement of Harris after it was written but not yet published",
+        "link": "https://fortune.com/2024/10/25/jeff-bezos-washington-post-editorial-endorsement-kamala-harris-donald-trump-election/",
+        "source": {
+          "name": "Fortune",
+          "icon": "https://lh3.googleusercontent.com/tFLb6M9by7fEPdctsE-5e-YDl6ecYOdDGEYTTC5krR3yydg4uRHaSorz2f0hHNyMWSHq20XBMw",
+          "authors": ["Ted Anthony"]
+        },
+        "date": "10/26/2024, 11:19 AM, +0000 UTC",
+        "snippet": null,
+        "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2024/10/GettyImages-2172039969_86f093-e1729891726398.jpg?w=1440&q=75",
+        "position": 3
+      },
+      {
+        "title": "Beyoncé brings star power to Harris rally in Texas with abortion law in the spotlight",
+        "link": "https://www.theguardian.com/us-news/2024/oct/26/beyonce-brings-star-power-to-harris-rally-in-texas-with-abortion-law-in-the-spotlight",
+        "source": {
+          "name": "The Guardian US",
+          "icon": "https://lh3.googleusercontent.com/H7OqHduLCFtIIGKjSozuaSYbttMMfNobl21BBVmCECo50wt6yMCOKTyNniViXVqhIgF0olTx",
+          "authors": ["Lauren Gambino"]
+        },
+        "date": "10/26/2024, 08:58 AM, +0000 UTC",
+        "snippet": null,
+        "thumbnail": "https://i.guim.co.uk/img/media/bee06b0cb3e3620580ad3c5f490dc83992f06ce5/0_0_7578_4549/master/7578.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=24b71b23508099ce27651d655015a480",
+        "position": 4
+      }
+    ],
+    "World": [
+      {
+        "title": null,
+        "link": null,
+        "source": null,
+        "date": null,
+        "snippet": null,
+        "thumbnail": null,
+        "position": 1
+      },
+      {
+        "title": null,
+        "link": null,
+        "source": null,
+        "date": null,
+        "snippet": null,
+        "thumbnail": null,
+        "position": 2
+      },
+      {
+        "title": "Jeff Bezos blocked the Washington Post's endorsement of Harris after it was written but not yet published",
+        "link": "https://fortune.com/2024/10/25/jeff-bezos-washington-post-editorial-endorsement-kamala-harris-donald-trump-election/",
+        "source": {
+          "name": "Fortune",
+          "icon": "https://lh3.googleusercontent.com/tFLb6M9by7fEPdctsE-5e-YDl6ecYOdDGEYTTC5krR3yydg4uRHaSorz2f0hHNyMWSHq20XBMw",
+          "authors": ["Ted Anthony"]
+        },
+        "date": "10/26/2024, 11:19 AM, +0000 UTC",
+        "snippet": null,
+        "thumbnail": "https://fortune.com/img-assets/wp-content/uploads/2024/10/GettyImages-2172039969_86f093-e1729891726398.jpg?w=1440&q=75",
+        "position": 3
+      },
+      {
+        "title": "Beyoncé brings star power to Harris rally in Texas with abortion law in the spotlight",
+        "link": "https://www.theguardian.com/us-news/2024/oct/26/beyonce-brings-star-power-to-harris-rally-in-texas-with-abortion-law-in-the-spotlight",
+        "source": {
+          "name": "The Guardian US",
+          "icon": "https://lh3.googleusercontent.com/H7OqHduLCFtIIGKjSozuaSYbttMMfNobl21BBVmCECo50wt6yMCOKTyNniViXVqhIgF0olTx",
+          "authors": ["Lauren Gambino"]
+        },
+        "date": "10/26/2024, 08:58 AM, +0000 UTC",
+        "snippet": null,
+        "thumbnail": "https://i.guim.co.uk/img/media/bee06b0cb3e3620580ad3c5f490dc83992f06ce5/0_0_7578_4549/master/7578.jpg?width=1200&height=630&quality=85&auto=format&fit=crop&overlay-align=bottom%2Cleft&overlay-width=100p&overlay-base64=L2ltZy9zdGF0aWMvb3ZlcmxheXMvdGctZGVmYXVsdC5wbmc&enable=upscale&s=24b71b23508099ce27651d655015a480",
+        "position": 4
+      }
+    ]
+  }
+  

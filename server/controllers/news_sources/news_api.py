@@ -6,7 +6,7 @@ from datetime import datetime
 
 load_dotenv()
 
-def get_latest_news(
+def get_latest_news_api(
         categories: dict,
         lang: str = 'en'
     ):
@@ -113,5 +113,5 @@ def search_for_news(
 
 if __name__ == "__main__":
     # Get category news
-    category_news = get_latest_news(categories={"categories": ["business", "technology"]})
+    category_news = get_latest_news_api(categories={"categories": ["business", "technology"]})
     keyword_news = search_for_news(words={"words": ["artificial intelligence", "machine learning"]}, lang = 'ta')

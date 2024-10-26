@@ -6,7 +6,7 @@ load_dotenv()
 
 
 #latest news by category
-def get_latest_news(categories:dict,language="en"):
+def get_latest_news_data_api(categories:dict,language="en"):
     articles={}
     params={
         "apikey": os.getenv("NEWSDATA_API_KEY"),

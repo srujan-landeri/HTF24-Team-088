@@ -1,0 +1,129 @@
+{
+    "timestamp": "2024-10-27T00:50:07.909018",
+    "articles": {
+        "business": {
+            "links": [
+                "https://jalopnik.com/scouts-direct-sales-plans-are-making-volkswagen-dealers-1851681634",
+                "https://www.bbc.com/news/articles/cwy1lkp71n2o",
+                "https://www.foxbusiness.com/business-leaders/elon-musks-net-worth-jumps-26-billion-after-tesla-shares-surge",
+                "https://www.wsj.com/science/space-astronomy/boeing-explores-sale-of-space-business-fa7fa3a9",
+                "https://www.theverge.com/2024/10/25/24279288/unitedhealth-change-breach-100-million-leak",
+                "https://www.cnn.com/2024/10/25/economy/consumer-sentiment-michigan-lower-interest-rates/index.html",
+                "https://removed.com",
+                "https://www.phillyburbs.com/story/news/local/2024/10/25/morrisville-pennsylvania-lottery-powerball-winning-million-delmorr-cigarette-outlet-bucks-county/75837350007/",
+                "https://finance.yahoo.com/news/live/stock-market-today-nasdaq-reaches-for-record-close-after-rough-week-for-stocks-133121684.html",
+                "https://www.cnbc.com/2024/10/25/spirit-airlines-stock-sell-planes-cut-jobs.html"
+            ],
+            "titles": [
+                "Scout's Direct-Sales Plans Are Making Volkswagen Dealers Sad - Jalopnik",
+                "Microsoft boss gets 63% pay rise despite asking for reduction - BBC.com",
+                "Elon Musk's net worth jumps $26B after Tesla shares surge - Fox Business",
+                "Exclusive | Boeing Explores Sale of Space Business - WSJ - The Wall Street Journal",
+                "UnitedHealth data breach leaked info on over 100 million people - The Verge",
+                "Americans are feeling better about the economy after the Fed’s jumbo rate cut - CNN",
+                "[Removed]",
+                "Did you buy a Powerball ticket in Morrisville this week? Lottery announces new $1M winner - Yahoo! Voices",
+                "Stock market today: Stocks climb as Treasury yields ease, but weekly losses loom - Yahoo Finance",
+                "Spirit Airlines stock jumps 15% after struggling budget carrier said it will sell planes, cut jobs - CNBC"
+            ],
+            "published_dates": [
+                "2024-10-25T17:05:00Z",
+                "2024-10-25T16:53:44Z",
+                "2024-10-25T16:50:00Z",
+                "2024-10-25T16:22:00Z",
+                "2024-10-25T15:19:32Z",
+                "2024-10-25T14:51:00Z",
+                "2024-10-25T14:49:00Z",
+                "2024-10-25T14:45:17Z",
+                "2024-10-25T14:43:59Z",
+                "2024-10-25T14:40:06Z"
+            ],
+            "sources": [
+                "Collin Woodard",
+                null,
+                "Aislinn Murphy",
+                "The Wall Street Journal",
+                "Umar Shakir",
+                "Bryan Mena",
+                null,
+                "Jo Ciavaglia, Bucks County Courier Times",
+                "Karen Friar",
+                "Leslie Josephs"
+            ],
+            "descriptions": [
+                "Won't someone think of those poor, poor car dealers?",
+                "Satya Nadella asked for a reduction because of cyber attacks the firm suffered - but still saw his earnings increase massively.",
+                "Tesla shares went on a tear in the wake of the release of its quarterly earnings on Wednesday. CEO Elon Musk added more than $26 billion to his net worth as a result.",
+                null,
+                "UnitedHealth’s Change Healthcare told the US Health Department it has sent over 100 million notices to people regarding the February ransomware breach.",
+                "Americans’ attitudes toward the economy improved this month thanks to lower interest rates.",
+                "[Removed]",
+                "More than two dozen six-figure winning lottery tickets have been sold in Bucks County since 2021.",
+                "Stocks are reviving somewhat as a pullback in US bond yields lifted some recent pressure on risk appetite.",
+                "Spirit Airlines shares rose after the struggling carrier said it will cut jobs and sell planes."
+            ]
+        },
+        "technology": {
+            "links": [
+                "https://www.bloomberg.com/news/newsletters/2024-10-25/-call-of-duty-black-ops-6-is-first-big-test-of-microsoft-s-69-billion-deal",
+                "https://www.theverge.com/2024/10/25/24279435/8bitdo-ultimate-mobile-gaming-controller-android-hall-effect",
+                "https://www.eurogamer.net/call-of-duty-black-ops-6s-arachnophobia-mode-is-arguably-more-terrifying-than-actual-giant-spiders",
+                "https://gizmodo.com/the-airpods-pro-2-finally-receive-its-hearing-health-features-2000516497",
+                "https://9to5mac.com/2024/10/25/heres-everything-apple-will-likely-announce-next-week/",
+                "https://www.gematsu.com/2024/10/sonic-x-shadow-generations-sales-top-one-million",
+                "https://www.gamespot.com/gallery/best-buys-3-day-gaming-sale-has-excellent-gaming-laptop-monitor-and-desktop-deals/2900-5890/",
+                "https://www.cnet.com/tech/mobile/i-tried-the-iphone-16s-new-visual-intelligence-and-it-feels-like-the-future/",
+                "https://venturebeat.com/ai/openai-ceo-responds-to-report-of-gpt-5-orion-coming-later-this-year-fake-news-out-of-control/",
+                "https://techcrunch.com/2024/10/25/apple-adds-a-menu-in-ios-18-2-to-change-default-apps-including-messages-and-calls/"
+            ],
+            "titles": [
+                "'Call of Duty: Black Ops 6' Is First Big Test of Microsoft's $69 Billion Deal - Bloomberg",
+                "8BitDo’s first smartphone controller has Hall effect joysticks and triggers - The Verge",
+                "Call of Duty: Black Ops 6's arachnophobia mode is arguably more terrifying than actual giant spiders - Eurogamer",
+                "The AirPods Pro 2 Finally Receive Its Hearing Health Features - Gizmodo",
+                "Here’s everything Apple will likely announce next week - 9to5Mac",
+                "Sonic X Shadow Generations sales top one million - Gematsu",
+                "Best Buy's 3-Day Gaming Sale Has Excellent Gaming Laptop, Monitor, And Desktop Deals - GameSpot",
+                "I Tried the iPhone 16's New Visual Intelligence, and It Feels Like the Future - CNET",
+                "OpenAI CEO responds to report of GPT-5 Orion coming later this year: ‘Fake news out of control’ - VentureBeat",
+                "Apple adds a menu in iOS 18.2 to change default apps including messages and calls - TechCrunch"
+            ],
+            "published_dates": [
+                "2024-10-25T17:15:43Z",
+                "2024-10-25T17:11:27Z",
+                "2024-10-25T16:16:14Z",
+                "2024-10-25T15:43:57Z",
+                "2024-10-25T15:34:00Z",
+                "2024-10-25T15:33:41Z",
+                "2024-10-25T15:31:28Z",
+                "2024-10-25T13:34:00Z",
+                "2024-10-25T13:31:34Z",
+                "2024-10-25T13:17:21Z"
+            ],
+            "sources": [
+                "Jason Schreier",
+                "Andrew Liszewski",
+                "Matt Wales",
+                "Dua Rashid",
+                "Chance Miller",
+                "Sal Romano",
+                "Darryn Bonthuys",
+                null,
+                "Carl Franzen",
+                "Ivan Mehta"
+            ],
+            "descriptions": [
+                "The latest game in the series is the first to release day-one on Microsoft’s subscription service, Xbox Game Pass",
+                "8BitDo’s new Ultimate Mobile Gaming Controller attaches with an adjustable clamp and wirelessly connects over Bluetooth, but only for Android mobile devices.",
+                "We've seen some unique approaches to arachnophobia modes in video games as they've started to become more common in rec…",
+                "You just need to wait for Monday (iOS 18.1's release) to use them.",
+                "Apple has confirmed that it has an “exciting week” of Mac announcements planned starting on Monday. We’re expecting updates to...",
+                "Total sales for Sonic X Shadow Generations have surpassed one million units worldwide, SEGA announced.",
+                "Save big on gaming hardware by Asus, Samsung, HP, Dell, and more leading manufacturers through Sunday, October 27.",
+                "Apple's Visual Intelligence is only in beta, but it could say a lot about where phones are going.",
+                "It's an interesting quasi-denial given how precise The Verge report is, noting specific details about Orion's supposed release plans.",
+                "Apple released iOS 18.2 as a developer beta users earlier this week. While there was a bunch of AI goodie shipped with this version — including Gemmoji,"
+            ]
+        }
+    }
+}

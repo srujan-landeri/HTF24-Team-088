@@ -56,7 +56,7 @@ def get_serp_by_query(query: str, limit: int = 10) -> Optional[List[Dict]]:
         print(f"Error occurred: {e}")
         return None
 
-def get_serp_by_categories(limit: int = 30) -> Dict[str, List[Dict]]:
+def get_serp_by_categories(limit: int = 10) -> Dict[str, List[Dict]]:
     """
     Fetch top news stories from all available Google News categories using Google News API.
     
@@ -83,7 +83,7 @@ def get_serp_by_categories(limit: int = 30) -> Dict[str, List[Dict]]:
             
             # Add topic parameter if it's not Top Stories
             if category_code:
-                search_params["topic_token"] = category_code
+                search_params["topic"] = category_code
             
             # Configure edition, if needed (e.g., 'us' for the United States)
             search_params["ned"] = "us"

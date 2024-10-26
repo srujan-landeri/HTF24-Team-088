@@ -1,6 +1,7 @@
 from fastapi import FastAPI
 from controllers import aggregated_news
-from routes import auth, scrape
+from routes import auth
+from server.routes import summarize
 
 app = FastAPI()
 
@@ -10,7 +11,7 @@ def read_root():
 
 
 app.include_router(auth.router, prefix="/auth", tags=["Authentication"])
-app.include_router(scrape.router, prefix="/news")
+app.include_router(summarize.router, prefix="/news")
 app.include_router(aggregated_news.router)
 
 if __name__ == "__main__":

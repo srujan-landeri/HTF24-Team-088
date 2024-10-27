@@ -12,8 +12,7 @@ def get_latest_news_data_api(categories:dict,language="en"):
         "apikey": os.getenv("NEWSDATA_API_KEY"),
         "country":"us,in",
         "size":10,
-        "language":language,
-        "removeduplicate":1
+        "language":language
     }
     url = "https://newsdata.io/api/1/latest"
     for category in categories["categories"]:
@@ -27,6 +26,7 @@ def get_latest_news_data_api(categories:dict,language="en"):
         response = requests.get(url, params=params)
         response=response.json()
         for article in response["results"]:
+            # print(article)
             links.append(article["link"])
             titles.append(article["title"])
             published_dates.append(article["pubDate"])
@@ -37,6 +37,7 @@ def get_latest_news_data_api(categories:dict,language="en"):
         articles[category]["published_dates"]=published_dates
         articles[category]["sources"]=authors
         articles[category]["descriptions"]=descriptions
+        # print(articles)
     return articles
 
 #news by keyword

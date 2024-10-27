@@ -26,7 +26,7 @@ def news_latest(categories:dict,language="en"):
     for key in response2.keys():
         for key1 in response2[key].keys():
             response[key][key1]=response2[key][key1]+response1[key][key1]
-    
+
     return response
 
 
@@ -51,7 +51,8 @@ async def aggregated_news_normal(AggregatedRequest: AggregatedRequest):
             "language":"en"
         }
     """
-    return news_latest({"categories":AggregatedRequest.categories},AggregatedRequest.language)
+    a=news_latest({"categories":AggregatedRequest.categories},AggregatedRequest.language)
+    return a
 
 @router.post("/aggregated_news_trends")
 async def aggregated_news_trends(AggregatedRequest: AggregatedRequest):

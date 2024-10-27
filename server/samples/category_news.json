@@ -1,11 +1,377 @@
 {
-    "timestamp": "2024-10-27T12:36:17.333102",
+    "timestamp": "2024-10-27T14:14:31.895959",
     "articles": {
-        "business": {},
-        "entertainment": {},
-        "health": {},
-        "science": {},
-        "sports": {},
-        "technology": {}
+        "business": {
+            "links": [
+                "https://fortune.com/2024/10/25/donald-trump-net-worth-election/",
+                "https://www.wsj.com/business/airlines/delta-sues-crowdstrike-over-july-operations-meltdown-099ad8fa",
+                "https://ambcrypto.com/safe-crypto-up-76-in-24-hours-will-the-breakout-lead-to-2-37/",
+                "https://removed.com",
+                "https://www.reuters.com/markets/us/futures-gain-treasury-yields-fall-tesla-slips-2024-10-25/",
+                "https://markets.businessinsider.com/news/stocks/nuclear-power-stocks-ai-energy-oklo-smr-nuscale-cameco-bwxt-2024-10",
+                "https://www.cnn.com/2024/10/25/tech/elon-musk-political-meetings-influence-dg/index.html",
+                "https://9to5mac.com/2024/10/25/masimo-apple-design-patents-apple-watch/",
+                "https://www.bloomberg.com/news/articles/2024-10-25/crypto-s-too-big-to-fail-token-tether-faces-potential-new-threat-from-us-usdt",
+                "https://www.washingtonpost.com/business/2024/10/25/mike-jeffries-arraignment-abercrombie-fitch/"
+            ],
+            "titles": [
+                "Trump says he’s ‘really, really rich.’ With a possible presidential victory looming, here’s how much he’s actually worth - Fortune",
+                "Delta Sues CrowdStrike Over July Operations Meltdown - The Wall Street Journal",
+                "SAFE crypto up 76% in 24 hours: Will the breakout lead to $2.37? - AMBCrypto News",
+                "[Removed]",
+                "Nasdaq closes higher ahead of a heavy week of earnings - Reuters",
+                "Nuclear power stocks are soaring amid an AI energy push. Here are 7 names to watch. - Yahoo Finance",
+                "Elon Musk’s dozens of meetings with presidents, prime ministers and political candidates show his growing political influence - CNN",
+                "Jury rules Masimo smartwatches infringe Apple design patents - 9to5Mac",
+                "Crypto’s ‘Too Big to Fail’ Token Tether Faces New Threat From US - Bloomberg",
+                "Ex-Abercrombie & Fitch CEO pleads not guilty to sex trafficking charges - The Washington Post"
+            ],
+            "published_dates": [
+                "2024-10-26T05:43:21Z",
+                "2024-10-26T01:12:00Z",
+                "2024-10-26T00:01:47Z",
+                "2024-10-25T23:29:45Z",
+                "2024-10-25T23:26:39Z",
+                "2024-10-25T23:18:48Z",
+                "2024-10-25T23:16:00Z",
+                "2024-10-25T23:09:00Z",
+                "2024-10-25T22:30:00Z",
+                "2024-10-25T21:51:35Z"
+            ],
+            "sources": [
+                "Jane Thier",
+                "The Wall Street Journal",
+                "Erastus Chami",
+                null,
+                "Lisa Mattackal, Purvi Agarwal, Carolina Mandl",
+                "Matthew Fox",
+                "Clare Duffy, Way Mullery",
+                "Chance Miller",
+                "Michael P. Regan, Olga Kharif",
+                "Julie Zauzmer Weil"
+            ],
+            "descriptions": [
+                "The explosion of Trump Media has led the personal wealth of its founder to skyrocket.",
+                null,
+                "Safe’s breakout could propel it toward $2.37 as strong momentum builds in the market.",
+                "[Removed]",
+                "The Nasdaq ended higher on Friday, driven by megacap shares, as investors awaited quarterly results from some of Wall Street's biggest companies next week.",
+                "The best-performing nuclear stock has soared 481% so far this year as mega-cap tech companies strike deals for nuclear power.",
+                "Over the past three years, Elon Musk has met dozens of times with presidents, prime ministers, lawmakers, government officials and political candidates from around the world.",
+                "Apple and medical device company Masimo are currently embroiled in multiple legal battles, headlined by the ongoing fight over the...",
+                "Of all the legal actions taken against cryptocurrency companies by US regulators and prosecutors over the past year, arguably none threatens to shake up the digital-asset industry as much as a potential crackdown on Tether Holdings Ltd.",
+                "Mike Jeffries and his partner are accused of pressuring young men who sought modeling jobs with the retailer into unwanted sex acts."
+            ]
+        },
+        "entertainment": {
+            "links": [
+                "https://chicago.suntimes.com/horoscopes/2024/10/25/horoscopes-today-friday-october-25-2024",
+                "https://www.bbc.com/news/articles/c170l0n8j54o",
+                "https://www.washingtonpost.com/obituaries/2024/10/25/phil-lesh-grateful-dead-dies/",
+                "http://deadline.com/2024/10/rapper-lil-durk-charged-orchestrating-cold-blooded-2022-murder-hire-la-1236158958/",
+                "https://www.usatoday.com/story/entertainment/celebrities/2024/10/25/sean-diddy-combs-loses-bid-for-government-gag-order/75849409007/",
+                "https://www.eonline.com/news/1409150/pete-davidson-unveils-results-of-his-major-tattoo-removal",
+                "https://pagesix.com/2024/10/25/celebrity-news/brooks-nader-implies-gleb-savchenko-broke-up-with-her-following-dancing-with-the-stars-elimination/",
+                "https://variety.com/2024/music/news/lily-allen-onlyfans-feet-pictures-spotify-1236191247/",
+                "http://www.rollingstone.com/tv-movies/tv-movie-news/james-franco-seth-rogen-friendship-fallout-allegations-1235143552/",
+                "https://nypost.com/2024/10/25/entertainment/liam-payne-passed-out-in-hotel-lobby-before-he-died-nightline-doc/"
+            ],
+            "titles": [
+                "Horoscope for Friday, October 25, 2024 - Chicago Sun-Times",
+                "What's next for the Menendez brothers? - BBC.com",
+                "Phil Lesh, founding member of the Grateful Dead, dies at 84 - The Washington Post",
+                "Rapper Lil Durk Charged With Orchestrating “Cold-Blooded” 2022 Murder-For-Hire In LA - Deadline",
+                "Sean 'Diddy' Combs loses bid for gag order to prevent alleged government leaks - USA TODAY",
+                "Pete Davidson Unveils Results of His Major Tattoo Removal - E! Online - E! NEWS",
+                "Brooks Nader implies Gleb Savchenko broke up with her following ‘Dancing With the Stars’ elimination - Page Six",
+                "Lily Allen OnlyFans Feet Pictures Make More Money Than Spotify - Variety",
+                "James Franco Talks Seth Rogen Friendship Fallout After Allegations: ‘I Guess It’s Over’ - Rolling Stone",
+                "Liam Payne ‘passed out’ in his hotel lobby shortly before he died: ‘Nightline’ documentary - New York Post "
+            ],
+            "published_dates": [
+                "2024-10-26T05:01:00Z",
+                "2024-10-26T03:59:52Z",
+                "2024-10-26T02:31:32Z",
+                "2024-10-25T23:22:00Z",
+                "2024-10-25T23:16:23Z",
+                "2024-10-25T22:25:00Z",
+                "2024-10-25T21:17:50Z",
+                "2024-10-25T20:55:00Z",
+                "2024-10-25T20:39:28Z",
+                "2024-10-25T19:58:00Z"
+            ],
+            "sources": [
+                "Georgia Nicols",
+                null,
+                "Brian Murphy",
+                "Glenn Garner",
+                "KiMi Robinson",
+                null,
+                "Nicki Cox",
+                "Jordan Moreau",
+                "Jon Blistein",
+                "Sean Mandell"
+            ],
+            "descriptions": [
+                null,
+                "A district attorney will argue for the brothers' resentencing on Friday - but freedom is still a long way off.",
+                "Mr. Lesh brought an avant-garde bass style to the band and contributed to hits such as “Box of Rain.”",
+                "Grammy winner Lil Durk has been arrested on federal charges for a 2022 murder-for-hire plot against fellow rapper Quando Rondo in Los Angeles.",
+                "Sean \"Diddy\" Combs' lawyers have accused government agencies investigating the mogul of leaking statements to the press. A judge vowed to take action.",
+                "Pete Davidson, who shared he was in the process of removing his tattoos in 2020, unveiled the treatment's results while attending an event at Los Angeles' Intuit Dome with Machine Gun Kelly.",
+                "The model, 28, and the professional dancer, 41, sparked dating rumors shortly after they were announced as partners on “Dancing With the Stars.”",
+                "Lily Allen's OnlyFans feet pictures make more money than her Spotify streams, she said.",
+                "James Franco discussed the end of his friendship and working relationship with Seth Rogen after Franco was accused of sexual misconduct.",
+                "More details about Payne’s final hours are emerging."
+            ]
+        },
+        "health": {
+            "links": [
+                "https://www.cdc.gov/ecoli/outbreaks/e-coli-O157.html",
+                "https://removed.com",
+                "https://www.tri-cityherald.com/news/local/article294480529.html",
+                "https://www.ghanaweb.com/GhanaHomePage/NewsArchive/Can-prayer-identify-an-HIV-patient-UG-blasts-Rev-Lawrence-Tetteh-over-claim-of-high-surge-in-cases-on-campus-1957147",
+                "https://arstechnica.com/health/2024/10/ars-live-join-us-tuesday-as-we-discuss-glp-1-drugs-insights-and-unknowns/",
+                "https://patch.com/connecticut/stonington/skunk-tests-positive-rabies-north-stonington",
+                "https://www.wjcl.com/article/raccoon-tests-positive-for-rabies-in-guyton/62720622",
+                "https://www.youtube.com/watch?v\\\\u003dsj46E0eJI0w",
+                "https://www.livescience.com/health/coronavirus/older-adults-should-get-2-doses-of-the-updated-covid-shot-cdc-says",
+                "https://dailygalaxy.com/2024/10/scientists-uncover-alarming-chimp-behavior-tiny-factor-may-have-averted-pandemic/"
+            ],
+            "titles": [
+                "E. coli Outbreak Linked to McDonald’s Quarter Pounders - CDC",
+                "[Removed]",
+                "More egg farm workers sick with avian flu. CDC sends help for Eastern WA outbreak - Tri-City Herald",
+                "Can prayer identify an HIV patient? – UG blasts Rev. Lawrence Tetteh over claim of high surge in cases on campus - GhanaWeb",
+                "Ars Live: Join us Tuesday as we discuss GLP-1 drugs—insights and unknowns - Ars Technica",
+                "Skunk Tests Positive For Rabies In North Stonington - Stonington, CT Patch",
+                "Raccoon tests positive for rabies in Guyton - WJCL News Savannah",
+                "Balancing on one leg to spot early signs of aging - Good Morning America",
+                "Older adults should get 2 doses of the updated COVID shot, CDC says - Livescience.com",
+                "Scientists uncover alarming chimp behavior : Tiny factor may have averted pandemic - The Daily Galaxy --Great Discoveries Channel"
+            ],
+            "published_dates": [
+                "2024-10-26T06:36:54Z",
+                "2024-10-26T00:56:47Z",
+                "2024-10-25T23:43:00Z",
+                "2024-10-25T22:21:02Z",
+                "2024-10-25T21:18:12Z",
+                "2024-10-25T20:55:58Z",
+                "2024-10-25T20:38:00Z",
+                "2024-10-25T20:28:53Z",
+                "2024-10-25T20:00:00Z",
+                "2024-10-25T20:00:00Z"
+            ],
+            "sources": [
+                "CDC",
+                null,
+                "Annette Cary",
+                null,
+                "Beth Mole",
+                "Vincent Salzo",
+                "Kate Saxton",
+                "Good Morning America",
+                "Nicoletta Lanese",
+                null
+            ],
+            "descriptions": [
+                "Learn about a multistate outbreak of <em>E. coli </em>infections linked to burgers.",
+                "[Removed]",
+                "More chicken egg farm workers in Pasco area suspected of having avian or bird influenza H5N1 in outbreak in Franklin County. CDC on site.",
+                "The University of Ghana has denied assertions by Rev. Lawrence Tetteh, the Founder and President of World Miracle Outreach, that there is an upsurge in HIV cases among students on campus.",
+                "Dr. Daniel Drucker will discuss what ahead for these blockbuster drugs.",
+                "The Ledge Light Health District issued a public health alert after a skunk tested positive for rabies on Friday.",
+                "Effingham County Health Department is alerting neighbors",
+                null,
+                "The 2024-2025 COVID-19 vaccines are available, and the CDC recommends that adults over 65 and immunocompromised people get two doses, spaced six months apart.",
+                "In a groundbreaking study, scientists have uncovered alarming behavioral changes in chimpanzees that could have far-reaching implications for human health. The research, conducted in Uganda's Budongo Forest, reveals a disturbing shift in chimp diets that may …"
+            ]
+        },
+        "science": {
+            "links": [
+                "https://www.foxnews.com/us/nasa-astronaut-hospitalized-medical-issue-crews-delayed-return-space-station",
+                "https://www.nasaspaceflight.com/2024/10/spacex-aces-flight-5-flight-6/",
+                "https://scitechdaily.com/asteroid-chemistry-reveals-earths-secret-ingredient-for-life/",
+                "https://www.cnn.com/2024/10/25/science/spacex-polaris-dawn-astronaut-health/index.html",
+                "https://www.sfgate.com/bayarea/article/uc-berkeley-scientists-make-climate-discovery-19861548.php",
+                "https://www.space.com/the-universe/solar-system/comet-tsuchinshan-atlas-dust-trail-navy-telescope-photos",
+                "https://www.livescience.com/animals/extinct-species/predatory-birds-from-the-jurassic-may-have-driven-cicada-evolution-for-millions-of-years",
+                "https://www.youtube.com/watch?v\\\\u003dLln1KXx2ZYM",
+                "https://www.artofmanliness.com/odds-ends/odds-ends-october-25-2024/",
+                "https://phys.org/news/2024-10-analysis-milky-central-supermassive-black.html"
+            ],
+            "titles": [
+                "NASA astronaut hospitalized with medical issue after crew’s delayed return from space station - Fox News",
+                "SpaceX success with Flight 5, Flight 6 already tested - NASASpaceflight.com",
+                "Asteroid Chemistry Reveals Earth’s Secret Ingredient for Life - SciTechDaily",
+                "‘My vision started to deteriorate’: Polaris Dawn crew reveals impacts of history-making mission - CNN",
+                "UC Berkeley scientists make groundbreaking climate discovery - SFGATE",
+                "See Comet Tsuchinshan-ATLAS eject a tail of gas and dust as it flies past the sun (photos) - Space.com",
+                "Predatory birds from the Jurassic may have driven cicada evolution for millions of years - Livescience.com",
+                "New Hope for TRAPPIST-1 // ISS Successor // Milky Way Particle Accelerator - Fraser Cain",
+                "Odds & Ends: October 25, 2024 - Art of Manliness",
+                "Re-analysis of Milky Way's central supermassive black hole shows elongated structure - Phys.org"
+            ],
+            "published_dates": [
+                "2024-10-26T01:59:00Z",
+                "2024-10-25T22:24:45Z",
+                "2024-10-25T21:04:03Z",
+                "2024-10-25T21:01:00Z",
+                "2024-10-25T20:55:25Z",
+                "2024-10-25T20:00:00Z",
+                "2024-10-25T18:00:00Z",
+                "2024-10-25T17:31:09Z",
+                "2024-10-25T17:11:10Z",
+                "2024-10-25T16:40:19Z"
+            ],
+            "sources": [
+                "Brie Stimson",
+                "Ryan Weber",
+                null,
+                "Jackie Wattles",
+                "Tessa McLean",
+                "Elizabeth Howell",
+                "Sierra Bouchér",
+                "Fraser Cain",
+                "Brett & Kate McKay",
+                "National Astronomical Observatory of Japan"
+            ],
+            "descriptions": [
+                "NASA said that one astronaut remains hospitalized Friday, hours after a four-person crew from the International Space Station splashed down off the coast of Florida.",
+                "SpaceX completed a significant milestone in the Starship program with Flight 5 and is set…",
+                "Zinc in meteorites reveals Earth's essential volatiles came from unmelted asteroids, crucial for life. This insight may guide the search for life on other planets. Researchers have analyzed the chemical signatures of zinc in meteorites to trace the origin of …",
+                "In an interview with CNN, the four civilian crew members behind SpaceX’s history-making Polaris Dawn mission reported different symptoms and ailments during their five-day journey last month.",
+                "UC Berkeley scientists recently made a discovery that could help potentially mitigate the effects of climate change.",
+                "The comet's dust trail was more visible in a Navy space telescope than any other.",
+                "Researchers calculated the flight ability of more than 80 ancient cicada species to analyze their evolution over time.",
+                null,
+                "In Harm’s Way: The Sinking of the USS Indianapolis and the Extraordinary Story of Its Survivors by Doug Stanton. If you watch Jaws, and find yourself prompted by Quint’s monologue to learn more about the sinking of the USS Indianapolis, you’ve got to pick up …",
+                "A research team led by Assistant Professor Makoto Miyoshi of the National Astronomical Observatory of Japan (NAOJ) has independently re-analyzed observation data of the supermassive black hole at the center of the Milky Way galaxy obtained and published by th…"
+            ]
+        },
+        "sports": {
+            "links": [
+                "https://www.mlb.com/news/yankees-2024-world-series-roster",
+                "https://www.blazersedge.com/2024/10/25/24279926/portland-trail-blazers-new-orleans-pelicans-final-score-simons-scoot-henderson-ayton-jerami-grant",
+                "https://sports.yahoo.com/live/yankees-vs-dodgers-freddie-freeman-wins-game-1-with-first-walk-off-grand-slam-in-world-series-history-223018784.html",
+                "https://arizonasports.com/story/3562541/suns-lakers-loss-turnovers-la/",
+                "https://www.nbcsportsbayarea.com/nba/golden-state-warriors/steph-curry-buddy-hield-andrew-wiggins/1797971/",
+                "https://sports.yahoo.com/world-series-fan-interference-ruling-at-dodger-stadium-keeps-yankees-scoreless-on-pivotal-play-031219365.html",
+                "https://www2.kusports.com/sports/college/basketball-men/2024/oct/25/quick-recap-down-key-players-ku-drops-sloppy-exhibition-game-at-arkansas-85-69/",
+                "https://www.deseret.com/sports/2024/10/25/byu-football-ucf-knights-game-preview/",
+                "https://www.jsonline.com/story/sports/nba/bucks/2024/10/25/milwaukee-bucks-chicago-bulls-game-score-highlights-injury-report-lineup/75759743007/",
+                "https://www.nhl.com/news/alexis-lafreniere-signs-7-year-contract-with-new-york-rangers"
+            ],
+            "titles": [
+                "Cortes added, Berti off World Series roster - MLB.com",
+                "Trail Blazers Play Great Behind Grant, Clingan, Fall to Pelicans - Blazer's Edge",
+                "Yankees vs. Dodgers: Freddie Freeman wins Game 1 with first walk-off grand slam in World Series history - Yahoo Sports",
+                "Suns still look like themselves in loss to Lakers - Arizona Sports",
+                "What we learned as Hield's historic start fuels Warrriors win vs. Jazz - NBC Sports Bay Area",
+                "World Series: Fan interference ruling at Dodger Stadium keeps Yankees scoreless on pivotal play - Yahoo Sports",
+                "Quick recap: Down key players, KU drops sloppy exhibition game at Arkansas, 85-69 - KUsports",
+                "BYU vs. UCF: Can struggling Knights bounce No. 11 Cougars from the Big 12 title race in steamy Orlando Saturday? - Deseret News",
+                "Big nights for Giannis Antetokounmpo and Damian Lillard not enough as Bulls beat Bucks 133-122 - Milwaukee Journal Sentinel",
+                "Lafreniere signs 7-year contract with Rangers - NHL.com"
+            ],
+            "published_dates": [
+                "2024-10-26T06:30:54Z",
+                "2024-10-26T05:08:46Z",
+                "2024-10-26T04:52:50Z",
+                "2024-10-26T04:39:58Z",
+                "2024-10-26T03:50:30Z",
+                "2024-10-26T03:31:00Z",
+                "2024-10-26T03:22:47Z",
+                "2024-10-26T03:00:00Z",
+                "2024-10-26T02:47:21Z",
+                "2024-10-26T00:59:22Z"
+            ],
+            "sources": [
+                "Bryan Hoch",
+                "Dave Deckard",
+                "Yahoo Sports Staff",
+                null,
+                "Monte Poole",
+                "Jack Baer",
+                null,
+                "Jay Drew",
+                "Jim Owczarski",
+                null
+            ],
+            "descriptions": [
+                "LOS ANGELES -- The Yankees announced their World Series roster prior to Game 1 against the Dodgers on Friday night in Los Angeles, selecting left-hander Nestor Cortes and removing infielder Jon Berti, who is unavailable due to a right hip flexor strain.\nThe 2…",
+                "Portland comes up one shot short of victory.",
+                "The Dodgers won Game 1 in the most dramatic fashion.",
+                "The Phoenix Suns' 123-116 loss to the Los Angeles Lakers was the second time in two tries they were unsuccessful in attempting to put the past behind them.",
+                "Buddy Hield's red-hot shooting propelled the Golden State Warriors' historic 127-86 win over the Utah Jazz on Friday night at Delta Center.",
+                "Jeffrey Maier 2.0? This one went a little differently for the Yankees.",
+                "Fayetteville, Ark. — Throughout the preseason, Kansas men’s basketball coach Bill Self has referred to his ongoing efforts to determine how the Jayhawks’ disparate pieces fit together. Playing without several of the most important pieces of that puzzle — pres…",
+                "BYU (7-0) faces a stiff test on Saturday in Orlando, even though UCF has lost four straight games and is struggling in its second season in the Big 12",
+                "Big nights for Giannis Antetokounmpo and Damian Lillard not enough as Bulls beat Bucks 133-122.",
+                "Forward, No. 1 pick in 2020 NHL Draft, had career-high 57 points last season"
+            ]
+        },
+        "technology": {
+            "links": [
+                "https://www.theverge.com/2024/10/25/24279853/apple-wins-a-battle-and-250-in-its-smartwatch-patent-fight-with-masimo",
+                "https://spacenews.com/starship-super-heavy-booster-came-within-one-second-of-aborting-first-catch-landing/",
+                "https://www.gamespot.com/gallery/call-of-duty-black-ops-6-safe-code-all-safehouse-puzzle-solutions/2900-5895/",
+                "https://www.polygon.com/mtg-magic-the-gathering/470491/final-fantasy-art-reveal-universes-beyond-standard-legal-announcement",
+                "https://www.thegamer.com/magic-the-gathering-mtg-combat-rules-change-foundations/",
+                "https://lifehacker.com/tech/what-is-the-fediverse-the-potential-future-of-social-media",
+                "https://www.youtube.com/watch?v\\\\u003dGfl6-GMFz_Q",
+                "https://www.theverge.com/2024/10/25/24279657/us-copyright-dmca-exception-extension-denied-remote-access",
+                "https://removed.com",
+                "http://9to5google.com/2024/10/25/gemini-2-0-december/"
+            ],
+            "titles": [
+                "Apple wins a battle (and $250) in its smartwatch patent fight with Masimo - The Verge",
+                "Starship Super Heavy booster came within one second of aborting first “catch” landing - SpaceNews",
+                "Call of Duty: Black Ops 6 Safe Code - All Safehouse Puzzle Solutions - GameSpot",
+                "Magic: The Gathering’s Final Fantasy reveal arrives with big changes for the beloved TCG - Polygon",
+                "Magic: The Gathering Introduces Huge Rule Change To Combat - TheGamer",
+                "How the 'Fediverse' Works (and Why It Might Be the Future of Social Media) - Lifehacker",
+                "SONIC X SHADOW GENERATIONS – Launch Trailer – Nintendo Switch - Nintendo of America",
+                "Video game preservationists have lost a legal fight to study games remotely - The Verge",
+                "[Removed]",
+                "Report: Google targeting December launch for Gemini 2.0 - 9to5Google"
+            ],
+            "published_dates": [
+                "2024-10-26T00:05:00Z",
+                "2024-10-25T23:42:26Z",
+                "2024-10-25T23:15:49Z",
+                "2024-10-25T22:30:00Z",
+                "2024-10-25T22:30:00Z",
+                "2024-10-25T22:00:00Z",
+                "2024-10-25T21:00:20Z",
+                "2024-10-25T20:58:10Z",
+                "2024-10-25T20:42:41Z",
+                "2024-10-25T20:26:00Z"
+            ],
+            "sources": [
+                "Jay Peters",
+                "",
+                "James Carr",
+                "Charlie Hall",
+                "Joe Parlock",
+                "Justin Pot",
+                "Nintendo of America",
+                "Sean Hollister",
+                null,
+                "Abner Li"
+            ],
+            "descriptions": [
+                "Apple earned a mixed victory in a patent infringement lawsuit against Masimo after a federal jury found that Masimo had infringed on some Apple patents.",
+                "SpaceX’s Super Heavy booster came within a second of aborting a “catch” landing attempt on the latest Starship test flight, according to audio posted online, apparently inadvertently, by Elon Musk.…",
+                "In the BO6 campaign you will find yourself in a safe house filled with puzzles, including a locked safe. Here's how to get it open.",
+                "Magic: The Gathering’s Universes Beyond is going mainstream. Fans should now expect just three Magic Multiverse sets each year.",
+                "Blocking with multiple creatures just because a lot less safe with Magic: The Gathering's Foundations rules change.",
+                "A brief, jargon-free explainer on the freer future of the social web.",
+                null,
+                "The US Copyright Office has just shut down requests from video game preservationists to let libraries, archives and museums temporarily lend individuals some virtual, remotely accessible copies of those works.",
+                "[Removed]",
+                "In December of 2023, Google announced the first version of Gemini and the company is reportedly planning to launch Gemini 2.0 a year later."
+            ]
+        }
     }
 }

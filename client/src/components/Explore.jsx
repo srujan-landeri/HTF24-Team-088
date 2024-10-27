@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import data from '../data/sample_data.json';
 import ArticleList from './ArticleList';
 import { ThumbsUp, ThumbsDown, MessageSquare, Bookmark, Link2, Search } from 'lucide-react';
+import { toast } from 'react-toastify';
 
 // Explore component
 const Explore = () => {
@@ -77,6 +78,55 @@ const Explore = () => {
         }
     };
 
+    const handleSave = async (article) => {
+        try {
+            const response = await fetch('http://localhost:8000/articles/save', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({
+                    user_id: userId,
+                    article_url: article.url,
+                    title: article.title,
+                    source: article.source,
+                    published_at: article.published_at,
+                    description: article.description,
+                    author: article.source
+                }),
+            });
+
+            if (!response.ok) throw new Error('Failed to save article');
+            toast({
+                description: "Article saved successfully",
+                duration: 2000,
+            });
+        } catch (error) {
+            console.error('Error saving article:', error);
+            toast({
+                variant: "destructive",
+                description: "Failed to save article",
+                duration: 2000,
+            });
+        }
+    };
+
+    // New handler for copying link to clipboard
+    const handleCopyLink = async (article) => {
+        try {
+            await navigator.clipboard.writeText(article.url);
+            toast({
+                description: "Link copied to clipboard",
+                duration: 2000,
+            });
+        } catch (error) {
+            console.error('Error copying link:', error);
+            toast({
+                variant: "destructive",
+                description: "Failed to copy link",
+                duration: 2000,
+            });
+        }
+    };
+
     const filteredArticles = articles.filter(article =>
         article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
         article.description.toLowerCase().includes(searchQuery.toLowerCase())
@@ -140,6 +190,8 @@ const Explore = () => {
                     articles={filteredArticles}
                     onLike={handleLike}
                     onDislike={handleDislike}
+                    onCopyLink={handleCopyLink}
+                    onSave={handleSave}
                 />
             </main>
         </div>

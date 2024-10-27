@@ -1,12 +1,14 @@
 'use client'
 
 import { useNavigate } from 'react-router-dom'
+import AuthNavbar from "../components/ui/AuthNavbar";
 
 export default function Example() {
 
     const navigate = useNavigate()
     return (
-        <div className="bg-white">           
+        <div className="bg-white">  
+            <AuthNavbar />         
             <div className="mx-auto max-w-2xl h-screen flex flex-col justify-center">
                 <div className="hidden sm:mb-8 sm:flex sm:justify-center">
                     <div className="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:ring-gray-900/20">

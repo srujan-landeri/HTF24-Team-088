@@ -2,7 +2,6 @@ import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
 import Login from './components/Login';
 import Register from './components/Register';
 import Home from './pages/Home';
-import Navbar from './components/ui/Navbar';
 import Dashboard from './pages/Dashboard';
 
 import { ToastContainer, toast } from 'react-toastify';
@@ -14,7 +13,6 @@ export default function App() {
     <Router>
       <div className="flex flex-col min-h-screen">
         <ToastContainer position="bottom-right" autoClose={3000} />
-        <Navbar/>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/auth/login" element={<Login />} />

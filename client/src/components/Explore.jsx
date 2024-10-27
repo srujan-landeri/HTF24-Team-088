@@ -31,7 +31,6 @@ const Explore = () => {
             }))
         ];
         setArticles(combinedArticles);
-        console.log('Articles:', combinedArticles);
     }, []);
 
     const handleLike = async (article) => {
@@ -95,7 +94,6 @@ const Explore = () => {
             });
 
             if (!response.ok) throw new Error('Failed to save article');
-            console.log('Article saved:', response);
         } catch (error) {
             console.error('Error saving article:', error);
             toast.error('Failed to save article');

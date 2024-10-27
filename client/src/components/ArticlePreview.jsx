@@ -2,6 +2,10 @@ import React from 'react';
 import { ExternalLink } from 'lucide-react';
 
 const LinkPreview = ({ article, embedData }) => {
+  if(!embedData) {
+    return null;
+  }
+  
   const handleClick = () => {
     if (article.url) {
       window.open(article.url, '_blank', 'noopener,noreferrer');

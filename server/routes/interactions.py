@@ -157,13 +157,21 @@ def get_article_details(article_url: ArticleURL):
         "dislikes_count": article.get("dislikes", 0),
     }
 
-@router.get(f"/articles/details/{id}")
-def get_article_details(article_id):
-    
+@router.get("/articles/details/{id}")
+def get_article_details(id: str):
+    try:
+        # Convert to ObjectId only if the length matches MongoDB's ObjectId format
+        if len(id) == 24:
+            article_id = to_object_id(id)
+        else:
+            article_id = id  # Use as-is if it's not an ObjectId format
+    except Exception as e:
+        raise HTTPException(status_code=400, detail="Invalid article ID format")
+
     article = db.articles.find_one({"_id": article_id})
-    print(article_id)  # Debugging output
+    
     if not article:
-        return {"error": "Article not found"}
+        raise HTTPException(status_code=404, detail="Article not found")
     
     return {
         "title": article["title"],

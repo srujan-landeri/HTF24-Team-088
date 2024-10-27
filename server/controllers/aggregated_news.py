@@ -43,7 +43,7 @@ def news_trends(words:dict,language="en"):
 
     return response
 
-@router.get("/aggregated_news_normal")
+@router.post("/aggregated_news_normal")
 async def aggregated_news_normal(AggregatedRequest: AggregatedRequest):
     """
         {
@@ -53,7 +53,7 @@ async def aggregated_news_normal(AggregatedRequest: AggregatedRequest):
     """
     return news_latest({"categories":AggregatedRequest.categories},AggregatedRequest.language)
 
-@router.get("/aggregated_news_trends")
+@router.post("/aggregated_news_trends")
 async def aggregated_news_trends(AggregatedRequest: AggregatedRequest):
     """
         {

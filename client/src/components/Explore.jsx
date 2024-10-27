@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import data from '../data/sample_data.json';
 import ArticleList from './ArticleList';
 import { ThumbsUp, ThumbsDown, MessageSquare, Bookmark, Link2, Search } from 'lucide-react';
 import { toast, ToastContainer } from 'react-toastify';
@@ -11,6 +10,7 @@ const Explore = () => {
     const userId = localStorage.getItem('userId') || '671d663c60819ecd6a91e985';
 
     useEffect(() => {
+<<<<<<< HEAD
         // Combine business and sports articles
         const combinedArticles = [
             ...data.articles.business.links.map((link, index) => ({
@@ -32,13 +32,69 @@ const Explore = () => {
         ];
         setArticles(combinedArticles);
     }, []);
+=======
+        const url = 'http://localhost:8000/aggregated_news_normal';
+        const requestData = {
+            categories: [
+                'business', 
+                'entertainment', 
+                'health', 
+                'science', 
+                'sports', 
+                'technology'
+            ],
+            language: 'en' // Optional, you can remove or change the language as needed
+        };
+
+        const fetchData = async () => {
+            try {
+                const response = await fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(requestData)
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! Status: ${response.status}`);
+                }
+
+                const res = await response.json();
+                console.log('Aggregated News:', res);
+
+                const combinedArticles = requestData.categories.flatMap(category => {
+                    const categoryData = res[category];
+                    if (!categoryData || !categoryData.links) {
+                        return []; // Skip if the category data is not available
+                    }
+
+                    return categoryData.links.map((link, index) => ({
+                        url: link || '', // Fallback to an empty string if link is null/undefined
+                        title: (categoryData.titles && categoryData.titles[index]) || '', // Use the index to get the correct title
+                        source: (categoryData.sources && categoryData.sources[index]) || '', // Use the index to get the correct source
+                        published_at: (categoryData.published_dates && categoryData.published_dates[index]) || '', // Use the index to get the correct date
+                        description: (categoryData.descriptions && categoryData.descriptions[index]) || '', // Use the index to get the correct description
+                        category
+                    }));
+                });
+
+                setArticles(combinedArticles);
+                console.log('Articles:', combinedArticles);
+            } catch (error) {
+                console.error('Error fetching aggregated news:', error);
+            }
+        };
+
+        fetchData();
+    }, []); // Empty dependency array means this effect runs once when the component mounts
+>>>>>>> e0c0ce13964549807e1858c4b1360ad87affb4d2
 
     const handleLike = async (article) => {
         try {
             const response = await fetch('http://localhost:8000/articles/like', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-
                 body: JSON.stringify({
                     user_id: userId,
                     article_url: article.url,
@@ -110,8 +166,8 @@ const Explore = () => {
     };
 
     const filteredArticles = articles.filter(article =>
-        article.title.toLowerCase().includes(searchQuery.toLowerCase()) ||
-        article.description.toLowerCase().includes(searchQuery.toLowerCase())
+        article.title.includes(searchQuery) ||
+        article.description.includes(searchQuery)
     );
 
     function handleSearch(e) {

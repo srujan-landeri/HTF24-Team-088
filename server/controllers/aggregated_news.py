@@ -51,6 +51,7 @@ async def aggregated_news_normal(AggregatedRequest: AggregatedRequest):
             "language":"en"
         }
     """
+    print(AggregatedRequest.categories)
     return news_latest({"categories":AggregatedRequest.categories},AggregatedRequest.language)
 
 @router.post("/aggregated_news_trends")

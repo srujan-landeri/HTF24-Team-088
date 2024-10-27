@@ -4,7 +4,6 @@ import os
 
 load_dotenv()
 
-
 #latest news by category
 def get_latest_news_data_api(categories:dict,language="en"):
     articles={}
@@ -26,6 +25,7 @@ def get_latest_news_data_api(categories:dict,language="en"):
         params["category"]=category
         response = requests.get(url, params=params)
         response=response.json()
+        print(response)
         for article in response["results"]:
             links.append(article["link"])
             titles.append(article["title"])

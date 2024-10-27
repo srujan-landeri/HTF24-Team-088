@@ -184,6 +184,7 @@ async def handle_chat(question: str, url: str, is_groq: bool = False) -> dict:
 async def chat(request: ChatRequest):
     """Handle chat requests using Ollama"""
     return await handle_chat(request.question, request.url)
+
 @router.post("/chat_groq")
 async def chat_groq(request: ChatRequest):
     """Handle chat requests using Groq"""

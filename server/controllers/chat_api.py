@@ -88,17 +88,9 @@ def handle_chat(question: str, url: str, is_groq: bool = False):
 
 @router.get("/chat")
 async def chat(request: ChatRequest):
-    """
-    Handle chat requests using Ollama
-    Example request body:
-    {
-        "question": "What did anand mahindra say",
-        "url": "https://www.ndtv.com/offbeat/video-anand-mahindra-praises-iit-graduates-for-creating-compact-home-gym-6876927"
-    }
-    """
-    return handle_chat(request.question, request.url)
-
-@router.get("/chat_groq")
+    """Handle chat requests using Ollama"""
+    return await handle_chat(request.question, request.url)
+@router.post("/chat_groq")
 async def chat_groq(request: ChatRequest):
     """
     Handle chat requests using Groq

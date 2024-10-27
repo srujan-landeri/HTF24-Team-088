@@ -88,25 +88,6 @@ export default function ArticleCard({ article, onLike, onDislike, onSave, onCopy
         fetchArticleDetails();
         fetchUserInteraction();
 
-        // Fetch embed data for the article
-        // const fetchEmbedData = async () => {
-        //     try {
-        //         const response = await fetch('http://localhost:8000/news/embed', {
-        //             method: 'POST',
-        //             headers: { 'Content-Type': 'application/json' },
-        //             body: JSON.stringify({ url: article.url }),
-        //         });
-
-        //         if (!response.ok) {
-        //             setEmbedData(null);
-        //         }
-
-        //         const data = await response.json();
-        //         setEmbedData(data); // Set embed data to state
-        //     } catch (error) {
-        //         console.error('Error fetching embed data:', error);
-        //     }
-        // };
 
         // fetchEmbedData();
     }, [article.url, userId]); // Fetch details and user interaction when the article URL or user ID changes
@@ -128,6 +109,7 @@ export default function ArticleCard({ article, onLike, onDislike, onSave, onCopy
 
             <h2 className="text-xl font-semibold mb-3">{article.title}</h2>
             <p className="text-gray-600 mb-4">{article.description}</p>
+            <button onClick={() => handleClick(article.url)} className="text-blue-500 hover:underline">Read more</button>
 
             {/* {
                 embedData && <ArticlePreview article={article} embedData={embedData} />

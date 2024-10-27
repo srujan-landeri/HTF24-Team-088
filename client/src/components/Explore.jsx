@@ -3,11 +3,44 @@ import ArticleList from './ArticleList';
 import { ThumbsUp, ThumbsDown, MessageSquare, Bookmark, Link2, Search } from 'lucide-react';
 import { toast, ToastContainer } from 'react-toastify';
 import data from "../data/sample_data.json"
+import {InfinitySpin} from 'react-loader-spinner';
+
 // Explore component
 const Explore = () => {
     const [searchQuery, setSearchQuery] = useState('');
     const [articles, setArticles] = useState([]);
+    const [loading, setLoading] = useState(false);
+
     const userId = localStorage.getItem('userId') || '671d663c60819ecd6a91e985';
+
+    useEffect(() => {
+            // Combine business and sports articles
+            setLoading(true);
+            const combinedArticles = [
+                ...data.articles.business.links.map((link, index) => ({
+                    url: link,
+                    title: data.articles.business.titles[index],
+                    source: data.articles.business.sources[index],
+                    published_at: data.articles.business.published_dates[index],
+                    description: data.articles.business.descriptions[index],
+                    category: 'business'
+                })),
+                ...data.articles.sports.links.map((link, index) => ({
+                    url: link,
+                    title: data.articles.sports.titles[index],
+                    source: data.articles.sports.sources[index],
+                    published_at: data.articles.sports.published_dates[index],
+                    description: data.articles.sports.descriptions[index],
+                    category: 'sports'
+                }))
+            ];
+
+            setTimeout(() => {
+                setArticles(combinedArticles);
+                setLoading(false);
+            }, 2000);    
+        }, []);
+
     const fetchNews = async () => {
       try {
         const response = await fetch('http://localhost:8000/aggregated_news_normal', {
@@ -26,7 +59,8 @@ const Explore = () => {
         }
         
         const data = await response.json();
-        console.log(data)
+        setArticles(data);
+        console.log(data);
       } catch (error) {
         console.error('Error fetching news:', error);
       }
@@ -115,6 +149,7 @@ const Explore = () => {
 
     function handleSearch(e) {
         e.preventDefault();
+        setArticles(filteredArticles)
     }
 
     return (
@@ -153,13 +188,6 @@ const Explore = () => {
                                 </button>
                             </div>
                         </form>
-
-                        {/* Additional Actions */}
-                        <div className="flex items-center space-x-4">
-                            <button variant="outline" className="hidden md:inline-flex">
-                                Categories
-                            </button>
-                        </div>
                     </div>
                 </div>
             </header>
@@ -167,13 +195,23 @@ const Explore = () => {
             {/* Main content */}
             <main className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-8">
 
-                <ArticleList
+                {!loading && <ArticleList
                     articles={filteredArticles}
                     onLike={handleLike}
                     onDislike={handleDislike}
                     onCopyLink={handleCopyLink}
                     onSave={handleSave}
-                />
+                />}
+                {
+                  loading &&  <div className='h-[85vh] flex justify-center items-center'>
+                        <InfinitySpin
+                            visible={true}
+                            width="200"
+                            color="#4fa94d"
+                            ariaLabel="infinity-spin-loading"
+                        />
+                    </div>
+                }
             </main>
         </div>
     );

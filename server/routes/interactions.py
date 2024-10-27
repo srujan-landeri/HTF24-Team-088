@@ -172,3 +172,12 @@ def get_user_saved_articles(user_id: str):
     
     saved_articles = user.get("saved_articles", [])
     return {"saved_articles": saved_articles}
+
+
+@router.get("/users/{user_id}")
+def get_user_info(user_id: str):
+    user = db.users.find_one({"_id": user_id})
+    if not user:
+        raise HTTPException(status_code=404, detail="User not found")
+    
+    return user

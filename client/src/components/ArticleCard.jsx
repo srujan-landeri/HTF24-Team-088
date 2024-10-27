@@ -1,14 +1,24 @@
 import React, { useEffect, useState } from 'react';
 import { ThumbsUp, ThumbsDown, MessageSquare, Bookmark, Link2 } from 'lucide-react';
+import { toast } from 'react-toastify';
+import './ArticlePreview'
+import ArticlePreview from './ArticlePreview';
 
-export default function ArticleCard({ article, onLike, onDislike }) {
+export default function ArticleCard({ article, onLike, onDislike, onSave, onCopyLink }) {
     const [likesCount, setLikesCount] = useState(0);
     const [dislikesCount, setDislikesCount] = useState(0);
     const [liked, setLiked] = useState(false);
     const [disliked, setDisliked] = useState(false);
     const [saved, setSaved] = useState(false);
+    const [embedData, setEmbedData] = useState(null); // New state for embed data
 
     const userId = localStorage.getItem('userId') || '671d663c60819ecd6a91e985';
+
+    const handleClick = (url) => {
+        if (url) {
+          window.open(article.url, '_blank', 'noopener,noreferrer');
+        }
+      };
 
     useEffect(() => {
         const fetchArticleDetails = async () => {
@@ -27,7 +37,6 @@ export default function ArticleCard({ article, onLike, onDislike }) {
                 setLikesCount(data.likes_count || 0);
                 setDislikesCount(data.dislikes_count || 0);
 
-                console.log('Article details:', data.likes_count, data.dislikes_count);
             } catch (error) {
                 console.error('Error fetching article details:', error);
                 setLikesCount(0);
@@ -47,9 +56,7 @@ export default function ArticleCard({ article, onLike, onDislike }) {
                 const dislikedArticles = await dislikesResponse.json();
                 const savedArticles = await savedResponse.json();
 
-                // Check if the current article is liked, disliked, or saved
-                console.log(article.url);
-
+                // Fetch the article ID using the hash endpoint
                 const fetchHash = async (url) => {
                     try {
                         const response = await fetch(`http://localhost:8000/hash`, {
@@ -69,7 +76,6 @@ export default function ArticleCard({ article, onLike, onDislike }) {
                 };
                 
                 const article_id = await fetchHash(article.url);
-                console.log(article_id, likedArticles);
                 setLiked(likedArticles.liked_articles.includes(article_id));
                 setDisliked(dislikedArticles.disliked_articles.includes(article_id));
                 setSaved(savedArticles.saved_articles.includes(article_id));
@@ -78,12 +84,36 @@ export default function ArticleCard({ article, onLike, onDislike }) {
             }
         };
 
+        // Fetch article details and user interaction
         fetchArticleDetails();
         fetchUserInteraction();
+
+        // Fetch embed data for the article
+        const fetchEmbedData = async () => {
+            try {
+                const response = await fetch('http://localhost:8000/news/embed', {
+                    method: 'POST',
+                    headers: { 'Content-Type': 'application/json' },
+                    body: JSON.stringify({ url: article.url }),
+                });
+
+                if (!response.ok) {
+                    throw new Error('Failed to fetch embed data');
+                }
+
+                const data = await response.json();
+                console.log('Embed data:', data);
+                setEmbedData(data); // Set embed data to state
+            } catch (error) {
+                console.error('Error fetching embed data:', error);
+            }
+        };
+
+        fetchEmbedData();
     }, [article.url, userId]); // Fetch details and user interaction when the article URL or user ID changes
 
     return (
-        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 cursor-pointer" onClick={() => handleClick(article.url)}>
             <div className="flex items-center space-x-3 mb-4">
                 <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
                     {article.source?.charAt(0).toUpperCase()}
@@ -100,6 +130,9 @@ export default function ArticleCard({ article, onLike, onDislike }) {
             <h2 className="text-xl font-semibold mb-3">{article.title}</h2>
             <p className="text-gray-600 mb-4">{article.description}</p>
 
+            {
+                embedData && <ArticlePreview article={article} embedData={embedData} />
+            }
             <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                 <div className="flex items-center space-x-6">
                     <button
@@ -134,13 +167,28 @@ export default function ArticleCard({ article, onLike, onDislike }) {
                     </button>
                 </div>
                 <div className="flex items-center space-x-4">
-                    <button className={`text-gray-500 hover:text-gray-700 ${saved ? 'text-blue-500' : ''}`}>
+                    <button 
+                        onClick={() => { 
+                            onSave(article); 
+                            setSaved(prev => !prev);
+                            if(saved){
+                                toast.success('Article Unsaved Successfully');
+                            }else{
+                                toast.success('Article Saved Successfully');
+                            }
+                        }}
+                        className={`text-gray-500 hover:text-gray-700 ${saved ? 'text-blue-500' : ''}`}>
                         <Bookmark className="h-5 w-5" />
                     </button>
                     <button className="text-gray-500 hover:text-gray-700">
                         <MessageSquare className="h-5 w-5" />
                     </button>
-                    <button className="text-gray-500 hover:text-gray-700">
+                    <button
+                        onClick={() => {
+                            onCopyLink(article.url)
+                            toast.success('Link copied to clipboard');
+                        }} 
+                        className="text-gray-500 hover:text-gray-700">
                         <Link2 className="h-5 w-5" />
                     </button>
                 </div>

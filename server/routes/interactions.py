@@ -38,7 +38,7 @@ def like_article(interaction: ArticleInteraction):
         raise HTTPException(status_code=404, detail="User not found")
 
     if article_id in user.get("liked_articles", []):
-        raise HTTPException(status_code=400, detail="Article already liked")
+        return {"message": "Article already liked"}
 
     if article_id in user.get("disliked_articles", []):
         # Remove dislike and decrement dislike count
@@ -79,8 +79,8 @@ def dislike_article(interaction: ArticleInteraction):
         raise HTTPException(status_code=404, detail="User not found")
 
     if article_id in user.get("disliked_articles", []):
-        raise HTTPException(status_code=400, detail="Article already disliked")
-
+        return {"message": "Article already disliked"}
+    
     if article_id in user.get("liked_articles", []):
         # Remove like and decrement like count
         db.users.update_one({"_id": user_id}, {"$pull": {"liked_articles": article_id}})

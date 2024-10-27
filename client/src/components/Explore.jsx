@@ -38,6 +38,7 @@ const Explore = () => {
             const response = await fetch('http://localhost:8000/articles/like', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
+
                 body: JSON.stringify({
                     user_id: userId,
                     article_url: article.url,
@@ -48,6 +49,7 @@ const Explore = () => {
                     author: article.source
                 }),
             });
+
             if (!response.ok) throw new Error('Failed to like article');
         } catch (error) {
             console.error('Error liking article:', error);

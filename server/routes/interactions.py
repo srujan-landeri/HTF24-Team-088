@@ -128,12 +128,19 @@ def save_article(interaction: ArticleInteraction):
         db.users.update_one({"_id": user_id}, {"$addToSet": {"saved_articles": article_id}})
         return {"message": "Article saved successfully"}
 
-# Get Article Details
-@router.get("/articles/{article_id}")
-def get_article_details(article_id: str):
+from pydantic import BaseModel
+
+class ArticleURL(BaseModel):
+    url: str
+
+@router.post("/articles/details")
+def get_article_details(article_url: ArticleURL):
+    article_id = url_to_id(article_url.url)
     article = db.articles.find_one({"_id": article_id})
+
+    print(article_id)  # Debugging output
     if not article:
-        raise HTTPException(status_code=404, detail="Article not found")
+        return {"error": "Article not found"}
     
     return {
         "title": article["title"],
@@ -145,6 +152,7 @@ def get_article_details(article_id: str):
         "likes_count": article.get("likes", 0),
         "dislikes_count": article.get("dislikes", 0),
     }
+
 
 @router.get("/likes/{user_id}")
 def get_user_likes(user_id: str):
@@ -188,3 +196,11 @@ async def get_user(user_id: str):
         raise HTTPException(status_code=404, detail="User not found")
     return serialize_user(user)
 
+
+class UrlRequest(BaseModel):
+    url: str
+
+@router.post("/hash")
+def get_hash(url_request: UrlRequest):
+    article_id = url_to_id(url_request.url)  # Access url through url_request
+    return {"article_id": article_id}

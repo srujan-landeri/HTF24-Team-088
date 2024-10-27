@@ -157,6 +157,25 @@ def get_article_details(article_url: ArticleURL):
         "dislikes_count": article.get("dislikes", 0),
     }
 
+@router.get(f"/articles/details/{id}")
+def get_article_details(article_id):
+    
+    article = db.articles.find_one({"_id": article_id})
+    print(article_id)  # Debugging output
+    if not article:
+        return {"error": "Article not found"}
+    
+    return {
+        "title": article["title"],
+        "url": article["url"],
+        "source": article["source"],
+        "published_at": article["published_at"],
+        "description": article.get("description"),
+        "author": article.get("author"),
+        "likes_count": article.get("likes", 0),
+        "dislikes_count": article.get("dislikes", 0),
+    }
+
 @router.get("/likes/{user_id}")
 def get_user_likes(user_id: str):
     user = db.users.find_one({"_id": to_object_id(user_id)})

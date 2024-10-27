@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import data from '../data/sample_data.json';
 import ArticleList from './ArticleList';
 import { ThumbsUp, ThumbsDown, MessageSquare, Bookmark, Link2, Search } from 'lucide-react';
-import { toast } from 'react-toastify';
+import { toast, ToastContainer } from 'react-toastify';
 
 // Explore component
 const Explore = () => {
@@ -95,35 +95,19 @@ const Explore = () => {
             });
 
             if (!response.ok) throw new Error('Failed to save article');
-            toast({
-                description: "Article saved successfully",
-                duration: 2000,
-            });
+            console.log('Article saved:', response);
         } catch (error) {
             console.error('Error saving article:', error);
-            toast({
-                variant: "destructive",
-                description: "Failed to save article",
-                duration: 2000,
-            });
+            toast.error('Failed to save article');
         }
     };
 
     // New handler for copying link to clipboard
-    const handleCopyLink = async (article) => {
+    const handleCopyLink = async (url) => {
         try {
-            await navigator.clipboard.writeText(article.url);
-            toast({
-                description: "Link copied to clipboard",
-                duration: 2000,
-            });
+            await navigator.clipboard.writeText(url);
         } catch (error) {
             console.error('Error copying link:', error);
-            toast({
-                variant: "destructive",
-                description: "Failed to copy link",
-                duration: 2000,
-            });
         }
     };
 
@@ -139,7 +123,7 @@ const Explore = () => {
     return (
         <div className="min-h-screen bg-gray-50">
             {/* Header */}
-            <header className="sticky top-0 bg-white border-b border-gray-200 shadow-sm">
+            <header className="sticky top-0 z-10 bg-white border-b border-gray-200 shadow-sm">
                 <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4">
                     <div className="flex flex-col gap-4 md:flex-row md:items-center md:justify-between">
                         {/* Logo and Title Section */}

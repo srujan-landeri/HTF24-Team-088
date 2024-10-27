@@ -6,7 +6,6 @@ from pydantic import BaseModel, HttpUrl, validator
 from newspaper import Article
 from langchain_chroma import Chroma
 from langchain_community.embeddings import OllamaEmbeddings
-from sentence_transformers import SentenceTransformer
 from langchain_text_splitters import CharacterTextSplitter
 from ollama import generate
 from dotenv import load_dotenv
@@ -26,22 +25,6 @@ try:
     groq_client = Groq(api_key=GROQ_API_KEY)
 except Exception as e:
     raise ValueError(f"Failed to initialize Groq client: {str(e)}")
-
-# Initialize SentenceTransformer model
-try:
-    sentence_transformer = SentenceTransformer('all-mpnet-base-v2', device='cpu')
-except Exception as e:
-    raise ValueError(f"Failed to initialize SentenceTransformer: {str(e)}")
-
-class SentenceTransformerEmbeddings:
-    def __init__(self, model):
-        self.model = model
-
-    def embed_documents(self, texts: List[str]) -> List[List[float]]:
-        return self.model.encode(texts, normalize_embeddings=True).tolist()
-
-    def embed_query(self, text: str) -> List[float]:
-        return self.model.encode(text, normalize_embeddings=True).tolist()
 
 class ChatRequest(BaseModel):
     question: str
@@ -64,12 +47,9 @@ class ChatRequest(BaseModel):
 
 # Store databases in dictionaries, mapping URLs to ChromaDB instances
 ollama_dbs: Dict[str, Optional[Chroma]] = {}
-sentence_transformer_dbs: Dict[str, Optional[Chroma]] = {}
 
 def get_embeddings(is_groq: bool = False):
     """Get the appropriate embeddings based on the API being used"""
-    if is_groq:
-        return SentenceTransformerEmbeddings(sentence_transformer)
     return OllamaEmbeddings(model="snowflake-arctic-embed:22m")
 
 async def handle_chat(question: str, url: str, is_groq: bool = False) -> dict:
@@ -102,7 +82,7 @@ async def handle_chat(question: str, url: str, is_groq: bool = False) -> dict:
             )
 
         # Choose the appropriate database dictionary based on embedding type
-        db_dict = sentence_transformer_dbs if is_groq else ollama_dbs
+        db_dict = ollama_dbs
 
         # Get or create the ChromaDB instance for this URL
         try:

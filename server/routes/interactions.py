@@ -174,10 +174,17 @@ def get_user_saved_articles(user_id: str):
     return {"saved_articles": saved_articles}
 
 
-@router.get("/users/{user_id}")
-def get_user_info(user_id: str):
-    user = db.users.find_one({"_id": user_id})
-    if not user:
-        raise HTTPException(status_code=404, detail="User not found")
-    
+def serialize_user(user):
+    if user:
+        user['id'] = str(user['_id'])  # Convert ObjectId to string
+        del user['_id']  # Optionally remove the ObjectId if not needed
     return user
+
+@router.get("/users/{user_id}")
+async def get_user(user_id: str):
+    user = db.users.find_one({"_id": to_object_id(user_id)})
+    user.pop("password", None)
+    if user is None:
+        raise HTTPException(status_code=404, detail="User not found")
+    return serialize_user(user)
+

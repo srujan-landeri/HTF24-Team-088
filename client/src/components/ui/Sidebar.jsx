@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { 
   Menu, 
   X, 
@@ -11,14 +11,51 @@ import {
   User,
   LogOut
 } from 'lucide-react';
+import { toast } from 'react-toastify';
+import { useNavigate } from 'react-router-dom';
 
 const Sidebar = ({ username }) => {
   const [isOpen, setIsOpen] = useState(false);
-  username = "John Doe";
+  const [userDetails, setUserDetails] = useState(null);
+  const [loading, setLoading] = useState(true);
+
+  const navigate = useNavigate();
   
   const toggleSidebar = () => {
     setIsOpen(!isOpen);
   };
+
+  const fetchUserDetails = async () => {
+    const userId = localStorage.getItem('user_id');
+    
+    if (!userId) {
+      toast.error("Session expired! Please login again.");
+      setTimeout(() => {
+        navigate('/auth/login'); 
+      }, 3000);
+      return;
+    }
+    
+    try {
+      const response = await fetch(`http://localhost:8000/users/${userId}`);
+      if (!response.ok) {
+        throw new Error('Network response was not ok');
+      }
+      const data = await response.json();
+      setUserDetails(data);
+    } catch (error) {
+      toast.error("Failed to fetch user details. Redirecting to login...");
+      setTimeout(() => {
+        window.location.href = '/auth/login'; // Redirect to login
+      }, 3000);
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  useEffect(() => {
+    fetchUserDetails();
+  }, []);
 
   return (
     <div className="relative">
@@ -104,7 +141,7 @@ const Sidebar = ({ username }) => {
                   <User className="w-5 h-5 text-gray-500" />
                 </div>
                 <div className="flex-1">
-                  <div className="text-sm font-medium text-gray-900">{username}</div>
+                  <div className="text-sm font-medium text-gray-900">{loading ? "Loading..." : (userDetails ? userDetails.username : username)}</div>
                 </div>
               </div>
               <button 

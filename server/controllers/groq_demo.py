@@ -92,10 +92,15 @@ def main():
                         full_url = f"{base_url}{endpoint}?{params}"
                         
                         # Make the request
-                        response = requests.get(
-                            full_url,
-                            timeout=60  # Increased timeout for article processing
-                        )
+                        # Replace the existing request code in the Streamlit app with this:
+                        response = requests.post(
+                            f"{base_url}{endpoint}",
+                            json={
+                                "question": question,
+                                "url": url
+                            },
+                            timeout=60
+                        )   
                         
                         if response.status_code == 200:
                             result = response.json()

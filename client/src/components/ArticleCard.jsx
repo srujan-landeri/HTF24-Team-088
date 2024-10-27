@@ -26,6 +26,8 @@ export default function ArticleCard({ article, onLike, onDislike }) {
                 const data = await response.json();
                 setLikesCount(data.likes_count || 0);
                 setDislikesCount(data.dislikes_count || 0);
+
+                console.log('Article details:', data.likes_count, data.dislikes_count);
             } catch (error) {
                 console.error('Error fetching article details:', error);
                 setLikesCount(0);
@@ -102,10 +104,9 @@ export default function ArticleCard({ article, onLike, onDislike }) {
                 <div className="flex items-center space-x-6">
                     <button
                         onClick={() => { 
-                            if(liked) return;
                             onLike(article); 
-                            setLiked(true); 
-                            setLikesCount(likesCount + 1); 
+                            setLiked(prev => !prev);
+                            setLikesCount(liked ? likesCount - 1 : likesCount + 1);
                             if(disliked){
                                 setDisliked(false);
                                 setDislikesCount(dislikesCount - 1);
@@ -118,10 +119,9 @@ export default function ArticleCard({ article, onLike, onDislike }) {
                     </button>
                     <button
                         onClick={() => { 
-                            if(disliked) return;
                             onDislike(article); 
-                            setDisliked(true); 
-                            setDislikesCount(dislikesCount + 1);
+                            setDisliked(prev => !prev); 
+                            setDislikesCount(disliked ? dislikesCount - 1 : dislikesCount + 1);
                             if(liked){
                                 setLiked(false);
                                 setLikesCount(likesCount - 1);

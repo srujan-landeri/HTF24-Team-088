@@ -38,7 +38,9 @@ def like_article(interaction: ArticleInteraction):
         raise HTTPException(status_code=404, detail="User not found")
 
     if article_id in user.get("liked_articles", []):
-        return {"message": "Article already liked"}
+        db.articles.update_one({"_id": article_id}, {"$inc": {"likes": -1}})
+        db.users.update_one({"_id": user_id}, {"$pull": {"liked_articles": article_id}})
+        return {"message": "Article unliked successfully"}
 
     if article_id in user.get("disliked_articles", []):
         # Remove dislike and decrement dislike count
@@ -79,7 +81,9 @@ def dislike_article(interaction: ArticleInteraction):
         raise HTTPException(status_code=404, detail="User not found")
 
     if article_id in user.get("disliked_articles", []):
-        return {"message": "Article already disliked"}
+        db.articles.update_one({"_id": article_id}, {"$inc": {"dislikes": -1}})
+        db.users.update_one({"_id": user_id}, {"$pull": {"disliked_articles": article_id}})
+        return {"message": "undisliked article"}
     
     if article_id in user.get("liked_articles", []):
         # Remove like and decrement like count
@@ -152,7 +156,6 @@ def get_article_details(article_url: ArticleURL):
         "likes_count": article.get("likes", 0),
         "dislikes_count": article.get("dislikes", 0),
     }
-
 
 @router.get("/likes/{user_id}")
 def get_user_likes(user_id: str):

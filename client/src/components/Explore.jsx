@@ -84,7 +84,6 @@ const Explore = () => {
 
     function handleSearch(e) {
         e.preventDefault();
-        console.log('Search query:', searchQuery);
     }
 
     return (

@@ -5,6 +5,7 @@ import FeedPage from '../components/CustomFeed'
 import UserLikes from '../components/UserLikes'
 import UserUnlikes from '../components/UserUnlikes'
 import UserSaved from '../components/UserSaved'
+import Chatbot from '../components/Chatbot'
 
 function Dashboard() {
   const [page, setPage] = React.useState('explorer')
@@ -17,6 +18,7 @@ function Dashboard() {
       {page == "liked" && <UserLikes setPage = {setPage}/>}
       {page == "disliked" && <UserUnlikes setPage = {setPage}/>}
       {page == "saved" && <UserSaved setPage = {setPage}/>}
+      {page == "chatbot" && <Chatbot />}
     </div>
   )
 }

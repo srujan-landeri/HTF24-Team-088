@@ -84,21 +84,6 @@ const Sidebar = ({ setPage }) => {
               Explore
             </button>
 
-            {/* My Feed Section */}
-            <div className="pt-2">
-              <div className="flex items-center px-3 py-2 text-base font-medium text-gray-900">
-                <Home className="w-4 h-4 mr-3 text-gray-500" />
-                My Feed
-              </div>
-              <button
-                onClick={() => alert("feed")}
-                className="flex items-center px-3 py-2 ml-1 w-full text-base text-gray-700 rounded-lg hover:bg-gray-100"
-              >
-                <PlusCircle className="w-4 h-4 mr-2  text-gray-400" />
-                Add Feed
-              </button>
-            </div>
-
             {/* Activity Section */}
             <div className="pt-2">
               <div className="px-3 py-2 text-xs font-semibold text-gray-500 uppercase">
@@ -125,6 +110,24 @@ const Sidebar = ({ setPage }) => {
                 >
                   <BookmarkCheck className="w-4 h-4 mr-3 text-gray-400" />
                   Saved Articles
+                </button>
+              </div>
+            </div>
+
+            {/*Chatbot Section*/}
+            <div className="pt-2">
+              <div className="px-3 py-2 text-xs font-semibold text-gray-500 uppercase">
+                Chatbot
+              </div>
+              <div className="space-y-1">
+                <button
+                  onClick={() => setPage("chatbot")}
+                  className="flex items-center px-3 py-2 text-base w-full text-gray-700 rounded-lg hover:bg-gray-100"
+                >
+                  <Compass className="
+                  w-4 h-4 mr-3 text-gray-400" 
+                  />
+                  Chatbot
                 </button>
               </div>
             </div>

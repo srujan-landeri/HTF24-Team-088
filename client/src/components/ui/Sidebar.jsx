@@ -14,7 +14,7 @@ import {
 import { toast } from 'react-toastify';
 import { useNavigate } from 'react-router-dom';
 
-const Sidebar = ({ username }) => {
+const Sidebar = ({ setPage }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [userDetails, setUserDetails] = useState(null);
   const [loading, setLoading] = useState(true);
@@ -76,13 +76,13 @@ const Sidebar = ({ username }) => {
           {/* Main Navigation */}
           <nav className="flex-1 px-1">
             {/* Explore Section */}
-            <a 
-              href="#" 
+            <button
+              onClick={() => setPage('explorer')} 
               className="flex items-center px-3 py-2 text-sm font-medium text-gray-900 rounded-lg hover:bg-gray-100"
             >
               <Compass className="w-4 h-4 mr-3 text-gray-500" />
               Explore
-            </a>
+            </button>
 
             {/* My Feed Section */}
             <div className="pt-2">
@@ -90,13 +90,13 @@ const Sidebar = ({ username }) => {
                 <Home className="w-4 h-4 mr-3 text-gray-500" />
                 My Feed
               </div>
-              <a 
-                href="#" 
+              <button
+                onClick={() => alert("feed")}
                 className="flex items-center px-3 py-2 ml-1 text-sm text-gray-700 rounded-lg hover:bg-gray-100"
               >
                 <PlusCircle className="w-4 h-4 mr-2 text-gray-400" />
                 Add Feed
-              </a>
+              </button>
             </div>
 
             {/* Activity Section */}
@@ -105,27 +105,27 @@ const Sidebar = ({ username }) => {
                 Activity
               </div>
               <div className="space-y-1">
-                <a 
-                  href="#" 
+                <button
+                  onClick={() => setPage('liked')}
                   className="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100"
                 >
                   <ThumbsUp className="w-4 h-4 mr-3 text-gray-400" />
                   Liked Articles
-                </a>
-                <a 
-                  href="#" 
+                </button>
+                <button
+                  onClick={() => setPage('disliked')}
                   className="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100"
                 >
                   <ThumbsDown className="w-4 h-4 mr-3 text-gray-400" />
                   Disliked Articles
-                </a>
-                <a 
-                  href="#" 
+                </button>
+                <button
+                  onClick={() => setPage('saved')}
                   className="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100"
                 >
                   <BookmarkCheck className="w-4 h-4 mr-3 text-gray-400" />
                   Saved Articles
-                </a>
+                </button>
               </div>
             </div>
           </nav>
@@ -141,7 +141,7 @@ const Sidebar = ({ username }) => {
                   <User className="w-5 h-5 text-gray-500" />
                 </div>
                 <div className="flex-1">
-                  <div className="text-sm font-medium text-gray-900">{loading ? "Loading..." : (userDetails ? userDetails.username : username)}</div>
+                  <div className="text-sm font-medium text-gray-900">{loading ? "Loading..." : (userDetails ? userDetails.username : "username")}</div>
                 </div>
               </div>
               <button 

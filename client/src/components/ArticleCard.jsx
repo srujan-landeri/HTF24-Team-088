@@ -89,31 +89,30 @@ export default function ArticleCard({ article, onLike, onDislike, onSave, onCopy
         fetchUserInteraction();
 
         // Fetch embed data for the article
-        const fetchEmbedData = async () => {
-            try {
-                const response = await fetch('http://localhost:8000/news/embed', {
-                    method: 'POST',
-                    headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ url: article.url }),
-                });
+        // const fetchEmbedData = async () => {
+        //     try {
+        //         const response = await fetch('http://localhost:8000/news/embed', {
+        //             method: 'POST',
+        //             headers: { 'Content-Type': 'application/json' },
+        //             body: JSON.stringify({ url: article.url }),
+        //         });
 
-                if (!response.ok) {
-                    throw new Error('Failed to fetch embed data');
-                }
+        //         if (!response.ok) {
+        //             setEmbedData(null);
+        //         }
 
-                const data = await response.json();
-                console.log('Embed data:', data);
-                setEmbedData(data); // Set embed data to state
-            } catch (error) {
-                console.error('Error fetching embed data:', error);
-            }
-        };
+        //         const data = await response.json();
+        //         setEmbedData(data); // Set embed data to state
+        //     } catch (error) {
+        //         console.error('Error fetching embed data:', error);
+        //     }
+        // };
 
-        fetchEmbedData();
+        // fetchEmbedData();
     }, [article.url, userId]); // Fetch details and user interaction when the article URL or user ID changes
 
     return (
-        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6 cursor-pointer" onClick={() => handleClick(article.url)}>
+        <div className="bg-white rounded-lg shadow-sm border border-gray-200 p-6">
             <div className="flex items-center space-x-3 mb-4">
                 <div className="w-8 h-8 bg-gray-200 rounded-full flex items-center justify-center">
                     {article.source?.charAt(0).toUpperCase()}
@@ -130,9 +129,9 @@ export default function ArticleCard({ article, onLike, onDislike, onSave, onCopy
             <h2 className="text-xl font-semibold mb-3">{article.title}</h2>
             <p className="text-gray-600 mb-4">{article.description}</p>
 
-            {
+            {/* {
                 embedData && <ArticlePreview article={article} embedData={embedData} />
-            }
+            } */}
             <div className="flex items-center justify-between pt-4 border-t border-gray-100">
                 <div className="flex items-center space-x-6">
                     <button

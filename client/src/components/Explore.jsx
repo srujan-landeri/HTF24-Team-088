@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react';
 import ArticleList from './ArticleList';
 import { ThumbsUp, ThumbsDown, MessageSquare, Bookmark, Link2, Search } from 'lucide-react';
 import { toast, ToastContainer } from 'react-toastify';
-
+import data from "../data/sample_data.json"
 // Explore component
 const Explore = () => {
     const [searchQuery, setSearchQuery] = useState('');
@@ -10,6 +10,27 @@ const Explore = () => {
     const userId = localStorage.getItem('userId') || '671d663c60819ecd6a91e985';
 
     useEffect(() => {
+    //     // Combine business and sports articles
+    //     const combinedArticles = [
+    //         ...data.articles.business.links.map((link, index) => ({
+    //             url: link,
+    //             title: data.articles.business.titles[index],
+    //             source: data.articles.business.sources[index],
+    //             published_at: data.articles.business.published_dates[index],
+    //             description: data.articles.business.descriptions[index],
+    //             category: 'business'
+    //         })),
+    //         ...data.articles.sports.links.map((link, index) => ({
+    //             url: link,
+    //             title: data.articles.sports.titles[index],
+    //             source: data.articles.sports.sources[index],
+    //             published_at: data.articles.sports.published_dates[index],
+    //             description: data.articles.sports.descriptions[index],
+    //             category: 'sports'
+    //         }))
+    //     ];
+    //     setArticles(combinedArticles);
+    // }, []);
         const url = 'http://localhost:8000/aggregated_news_normal';
         const requestData = {
             categories: [
@@ -126,7 +147,6 @@ const Explore = () => {
             });
 
             if (!response.ok) throw new Error('Failed to save article');
-            console.log('Article saved:', response);
         } catch (error) {
             console.error('Error saving article:', error);
             toast.error('Failed to save article');

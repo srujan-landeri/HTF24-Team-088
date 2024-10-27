@@ -7,7 +7,6 @@ const UserSaved = ({setPage}) => {
     const [searchQuery, setSearchQuery] = useState('');
     const [articles, setArticles] = useState([]);
     const userId = localStorage.getItem('userId') || '671d663c60819ecd6a91e985';
-    console.log(userId);
     useEffect(() => {
         fetchLikedArticles();
     }, []);
@@ -17,7 +16,6 @@ const UserSaved = ({setPage}) => {
             // First, get all liked article IDs
             const response = await fetch(`http://localhost:8000/saved/${userId}`);
             const data = await response.json();
-            console.log(data)
             // Fetch details for each article ID
             const articleDetails = await Promise.all(
                 data.saved_articles.map(async (articleId) => {
@@ -27,7 +25,6 @@ const UserSaved = ({setPage}) => {
                 })
             );
             setArticles(articleDetails);
-            console.log(articleDetails);            
         } catch (error) {
             console.error('Error fetching saved articles:', error);
             toast({

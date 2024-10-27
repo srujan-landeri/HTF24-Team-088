@@ -8,7 +8,6 @@ const UserLikes = ({setPage}) => {
     const [searchQuery, setSearchQuery] = useState('');
     const [articles, setArticles] = useState([]);
     const userId = localStorage.getItem('userId') || '671d663c60819ecd6a91e985';
-    console.log(userId);
     useEffect(() => {
         fetchLikedArticles();
     }, []);
@@ -28,7 +27,6 @@ const UserLikes = ({setPage}) => {
                 })
             );
             setArticles(articleDetails);
-            console.log(articleDetails);            
         } catch (error) {
             console.error('Error fetching liked articles:', error);
             toast({

@@ -17,10 +17,10 @@ const UserDisikes = ({setPage}) => {
             // First, get all liked article IDs
             const response = await fetch(`http://localhost:8000/dislikes/${userId}`);
             const data = await response.json();
-            
+            console.log(data)
             // Fetch details for each article ID
             const articleDetails = await Promise.all(
-                data.liked_articles.map(async (articleId) => {
+                data.disliked_articles.map(async (articleId) => {
                     const detailsResponse = await fetch(`http://localhost:8000/articles/details/${articleId}`);
                     const details = await detailsResponse.json();
                     return details;

@@ -78,7 +78,7 @@ const Sidebar = ({ setPage }) => {
             {/* Explore Section */}
             <button
               onClick={() => setPage('explorer')} 
-              className="flex items-center px-3 py-2 text-sm font-medium text-gray-900 rounded-lg hover:bg-gray-100"
+              className="flex items-center px-3 py-2 w-full text-base font-medium text-gray-900 rounded-lg hover:bg-gray-100"
             >
               <Compass className="w-4 h-4 mr-3 text-gray-500" />
               Explore
@@ -86,15 +86,15 @@ const Sidebar = ({ setPage }) => {
 
             {/* My Feed Section */}
             <div className="pt-2">
-              <div className="flex items-center px-3 py-2 text-sm font-medium text-gray-900">
+              <div className="flex items-center px-3 py-2 text-base font-medium text-gray-900">
                 <Home className="w-4 h-4 mr-3 text-gray-500" />
                 My Feed
               </div>
               <button
                 onClick={() => alert("feed")}
-                className="flex items-center px-3 py-2 ml-1 text-sm text-gray-700 rounded-lg hover:bg-gray-100"
+                className="flex items-center px-3 py-2 ml-1 w-full text-base text-gray-700 rounded-lg hover:bg-gray-100"
               >
-                <PlusCircle className="w-4 h-4 mr-2 text-gray-400" />
+                <PlusCircle className="w-4 h-4 mr-2  text-gray-400" />
                 Add Feed
               </button>
             </div>
@@ -107,21 +107,21 @@ const Sidebar = ({ setPage }) => {
               <div className="space-y-1">
                 <button
                   onClick={() => setPage('liked')}
-                  className="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100"
+                  className="flex items-center px-3 py-2 text-base w-full text-gray-700 rounded-lg hover:bg-gray-100"
                 >
                   <ThumbsUp className="w-4 h-4 mr-3 text-gray-400" />
                   Liked Articles
                 </button>
                 <button
                   onClick={() => setPage('disliked')}
-                  className="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100"
+                  className="flex items-center px-3 py-2 text-base w-full text-gray-700 rounded-lg hover:bg-gray-100"
                 >
                   <ThumbsDown className="w-4 h-4 mr-3 text-gray-400" />
                   Disliked Articles
                 </button>
                 <button
                   onClick={() => setPage('saved')}
-                  className="flex items-center px-3 py-2 text-sm text-gray-700 rounded-lg hover:bg-gray-100"
+                  className="flex items-center px-3 py-2 text-base w-full  text-gray-700 rounded-lg hover:bg-gray-100"
                 >
                   <BookmarkCheck className="w-4 h-4 mr-3 text-gray-400" />
                   Saved Articles
@@ -141,12 +141,12 @@ const Sidebar = ({ setPage }) => {
                   <User className="w-5 h-5 text-gray-500" />
                 </div>
                 <div className="flex-1">
-                  <div className="text-sm font-medium text-gray-900">{loading ? "Loading..." : (userDetails ? userDetails.username : "username")}</div>
+                  <div className="text-base font-medium text-gray-900">{loading ? "Loading..." : (userDetails ? userDetails.username : "username")}</div>
                 </div>
               </div>
               <button 
                 onClick={() => alert("Logging out...")} 
-                className="flex items-center w-full px-3 py-2 text-sm text-red-600 rounded-lg hover:bg-red-50"
+                className="flex items-center w-full px-3 py-2 text-base text-red-600 rounded-lg hover:bg-red-50"
               >
                 <LogOut className="w-4 h-4 mr-3" />
                 Logout

@@ -31,6 +31,7 @@ const Explore = () => {
         ];
         setArticles(combinedArticles);
     }, []);
+    
     //     const url = 'http://localhost:8000/aggregated_news_normal';
     //     const requestData = {
     //         categories: [

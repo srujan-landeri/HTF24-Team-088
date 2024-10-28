@@ -1,3 +1,3 @@
-##### PS - 20 Statement: 
+#### PS - 20 Statement: 
 
 Personalized News Aggregator API Descripti on: Develop a backend service for a personalized news aggregator API that compiles and organizes news arti cles from various sources, categorized into topics like technology, sports, and politi cs. The service will support user profi les, enabling individuals to select preferred topics and receive curated content aligned with their interests. Users can interact with the news feed by saving, liking, and sharing arti cles, as well as tracking trending arti cles within each category to stay updated on popular topics. This API aims to enhance user engagement and simplify content discovery, making it a practi cal tool for a personalized, interacti ve news experience.
